@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Gallery</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
+        rel="stylesheet">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/resume.min.css" rel="stylesheet">
+    <!-- linkig font awesome -->
+    <!-- <link rel="stylesheet" type="text/css"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> -->
+    <!-- linking font awesome end here -->
+
+
+    <!-- Linking the google font poppins start here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Linking the google font poppins end here -->
+
+
+    <style>
+        /* Gallery page specific background color */
+        body {
+            background-color: #c2bdbd;
+        }
+
+        .container-img {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 40px 20px 0px 20px;
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+
+        .container-img .box {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 20px;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .container-img .box .dream {
+            display: flex;
+            flex-direction: column;
+            width: 32.5%;
+            gap: 15px;
+        }
+
+        .image-container {
+            position: relative;
+            display: inline-block;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .image-container:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .container-img .box .dream img {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+            display: block;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .image-container:hover .overlay {
+            opacity: 1;
+        }
+
+        .hover-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 18px;
+            font-family: Arial, sans-serif;
+            font-weight: normal;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: 2;
+            pointer-events: none;
+        }
+
+        .image-container:hover .hover-text {
+            opacity: 1;
+        }
+
+        /* Responsive design for smaller screens */
+        @media (max-width: 768px) {
+            .container-img .box {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .container-img .box .dream {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container-img {
+                margin: 20px 10px 0px 10px;
+            }
+        }
+    </style>
+
+
+
+
+
+</head>
+
+<body id="page-top">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <!-- <span class="d-block d-lg-none">Start Bootstrap</span> -->
+            <span class="d-none d-lg-block">
+                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpeg" alt="">
+            </span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="publications.html">Publications</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="learn-quantum.html">Learn Quantum Computing</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="research.html">Research</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="awards.html">Awards</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#">Blogs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" id="download-cv" href="Akash_Kumar_Singh_Resume.pdf">Download
+                        CV</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="contact.html">Contact</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid p-0">
+
+        <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+            <div class="my-auto">
+
+
+                <div class="container-img">
+                    <h1 class="mb-0">Gallery</h1>
+
+
+                    <div class="box">
+                        <div class="dream">
+                            <div class="image-container">
+                                <img src="img/gallery-img/3,1correction2.png">
+                                <div class="overlay"></div>
+                                <div class="hover-text">hello</div>
+                            </div>
+                            <div class="image-container">
+                                <img src="img/gallery-img/3,1correction3.png">
+                                <div class="overlay"></div>
+                                <div class="hover-text">hello</div>
+                            </div>
+                            <div class="image-container">
+                                <img src="img/gallery-img/3,1correction4.png">
+                                <div class="overlay"></div>
+                                <div class="hover-text">hello</div>
+                            </div>
+                            <div class="image-container">
+                                <img src="img/gallery-img/Block Encoding.PNG">
+                                <div class="overlay"></div>
+                                <div class="hover-text">hello</div>
+                            </div>
+                            <div class="image-container">
+                                <img src="img/gallery-img/Circuit for QLT.png">
+                                <div class="overlay"></div>
+                                <div class="hover-text">hello</div>
+                            </div>
+                            <div class="image-container">
+                                <img src="img/gallery-img/WhatsApp Image.jpeg">
+                                <div class="overlay"></div>
+                                <div class="hover-text">hello</div>
+                            </div>
+                        </div>
+
+                        <div class="dream">
+                            <div class="image-container">
+                                <img src="img/gallery-img/Complex weight LCU.png">
+                                <div class="overlay"></div>
+                                <div class="hover-text">hello</div>
+                            </div>
+                            <div class="image-container">
+                                <img src="img/gallery-img/Exponential.png">
+                                <div class="overlay"></div>
+                                <div class="hover-text">hello</div>
+                            </div>
+                            <div class="image-container">
+                                <img src="img/gallery-img/Further Reduction in select gate.png">
+                                <div class="overlay"></div>
+                                <div class="hover-text">hello</div>
+                            </div>
+                            <div class="image-container">
+                                <img src="img/gallery-img/Lap-lchs circuit.png">
+                                <div class="overlay"></div>
+                                <div class="hover-text">hello</div>
+                            </div>
+                            <div class="image-container">
+                                <img src="img/gallery-img/LCU.PNG">
+                                <div class="overlay"></div>
+                                <div class="hover-text">hello</div>
+                            </div>
+                            <div class="image-container">
+                                <img src="img/gallery-img/WhatsApp 01.jpeg">
+                                <div class="overlay"></div>
+                                <div class="hover-text">hello</div>
+                            </div>
+                        </div>
+
+                        <div class="dream">
+                            <div class="image-container">
+                                <img src="img/gallery-img/QLT CIRCUIT PENNYLANE.png">
+                                <div class="overlay"></div>
+                                <div class="hover-text">hello</div>
+                            </div>
+                            <div class="image-container">
+                                <img src="img/gallery-img/Real weight LCU.png">
+                                <div class="overlay"></div>
+                                <div class="hover-text">hello</div>
+                            </div>
+                            <div class="image-container">
+                                <img src="img/gallery-img/sin.PNG">
+                                <div class="overlay"></div>
+                                <div class="hover-text">hello</div>
+                            </div>
+                            <div class="image-container">
+                                <img src="img/gallery-img/Single qubit QLT.png">
+                                <div class="overlay"></div>
+                                <div class="hover-text">hello</div>
+                            </div>
+                            <div class="image-container">
+                                <img src="img/gallery-img/Sinh.png">
+                                <div class="overlay"></div>
+                                <div class="hover-text">hello</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/resume.min.js"></script>
+
+</body>
+
+</html>

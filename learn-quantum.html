@@ -40,9 +40,69 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
 
 
 
+    <style>
+        /* Scoped beautification for Learn Quantum page */
+        .learn-quantum-page .top-upper-para {
+            line-height: 1.8;
+            color: #39424e;
+        }
+
+        .learn-quantum-page h1 {
+            letter-spacing: 0.3px;
+        }
+
+        .learn-quantum-page h2.headind-bold {
+            color: #2b2f33;
+            border-left: 4px solid #0b3d91;
+            padding-left: 10px;
+        }
+
+        .learn-quantum-page .resume-item {
+            background: #ffffff;
+            border: 1px solid #eef0f3;
+            border-radius: 10px;
+            padding: 16px;
+            box-shadow: 0 6px 16px rgba(9, 30, 66, 0.05);
+        }
+
+        .learn-quantum-page .lqc-link-style {
+            color: #0d6efd;
+            text-decoration: none;
+        }
+
+        .learn-quantum-page .lqc-link-style:hover {
+            text-decoration: underline;
+        }
+
+        .learn-quantum-page .lqc-ordered-list {
+            margin-left: 1.1rem;
+            line-height: 1.65;
+        }
+
+        .learn-quantum-page .lqc-ordered-list > li {
+            margin-bottom: 0.4rem;
+        }
+
+        .learn-quantum-page .lqc-para-style {
+            font-weight: 600;
+            color: #0b3d91;
+            background: #eef5ff;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+
+        .learn-quantum-page h3.mb-0 {
+            font-size: 1.1rem;
+            color: #2b2f33;
+        }
+
+        .learn-quantum-page .subheading {
+            color: #5b6572;
+        }
+    </style>
 </head>
 
-<body id="page-top">
+<body id="page-top" class="learn-quantum-page">
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">
@@ -57,26 +117,36 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#">Publications</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="learn-quantum.html">Learn Quantum Computing</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#">Blogs</a>
-                </li>
-                <li class="nav-item">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="publications.html">Publications</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="learn-quantum.html">Learn Quantum Computing</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="research.html">Research</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="awards.html">Awards</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="gallery.html">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#">Blogs</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link js-scroll-trigger" id="download-cv" href="Akash_Kumar_Singh_Resume.pdf">Download CV</a>
         </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#">Contact</a>
-                </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="contact.html">Contact</a>
+        </li>
 
-            </ul>
+      </ul>
         </div>
     </nav>
 
@@ -99,7 +169,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
                     Though to tell you the truth this is secretly my checklist that I want to complete some day. So
                     below is a curated set of resources that I have compiled for those who wish to delve into this
                     fascinating field. Before starting I must say that learning beforehand <span
-                        class="lqc-para-style">Linear Algebra, Group Theory, Ordinary and Partial differential equations</span> can
+                        class="lqc-para-style">Linear Algebra, Group Theory, Ordinary and Partial differential
+                        equations</span> can
                     make your journey a lot easier but you can also learn it even after taking an introductory course
                     of Quantum computing.
                     <br>
@@ -107,7 +178,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
                     focused on Quantum Algorithms and expand on that. Also if there is any typo, I apologies beforehand.
                     And yes I am to open to all suggestions if any, just drop me an e-mail on <a
                         href="mailto:akashkumar@students.iisertirupati.ac.in">akashkumar@students.iisertirupati.ac.in</a>.
-                    <br>Last but not the least I want to dedicate this page to Late Dr. Sankaranarayanan Selvarajan, SQT,DIAT Pune who was a great
+                    <br>Last but not the least I want to dedicate this page to Late Dr. Sankaranarayanan Selvarajan,
+                    SQT,DIAT Pune who was a great
                     source of inspiration for me.
 
 
@@ -177,44 +249,54 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
                         <h3 class="mb-0">3. Classical and Quantum Algorithms.</h3>
                         <p>To learn quantum algorithms at an introductory level, you may not need extensive knowledge of
                             classical algorithms initially. However, to design quantum algorithms, understanding
-                            classical algorithms and complexity theory is essential. Interestingly, I have also included Quantum Information
+                            classical algorithms and complexity theory is essential. Interestingly, I have also included
+                            Quantum Information
                             notes by Prof. Scott Aaronson, a computer scientist, because traditionally, CS majors design
-                            algorithms. And his CS perspective on Quantum Information Science as a whole is invaluable. I think in the
+                            algorithms. And his CS perspective on Quantum Information Science as a whole is invaluable.
+                            I think in the
                             future, designing algorithms will likely be the work of both CS and physics majors,
                             especially quantum algorithms and hence will get best of both worlds.</p>
                         <div class="subheading mb-3"></div>
 
                         <ol class="lqc-ordered-list" type="a">
                             <li>Discrete Maths/ Maths for Computer Science (Proofs Based), MIT.
-                                <a href="https://youtube.com/playlist?list=PLB7540DEDD482705B&si=9cfRpLEXAJIzOy2z" class="lqc-link-style">Link</a>
+                                <a href="https://youtube.com/playlist?list=PLB7540DEDD482705B&si=9cfRpLEXAJIzOy2z"
+                                    class="lqc-link-style">Link</a>
                             </li>
                             <li>Intro to Theoretical Computer Science,Udacity
-                                <a href="https://youtube.com/playlist?list=PLAwxTw4SYaPl4bx7Pck4JWjy1WVbrDx0U&si=erRyzr9vwUc415F8" class="lqc-link-style">Link</a>
+                                <a href="https://youtube.com/playlist?list=PLAwxTw4SYaPl4bx7Pck4JWjy1WVbrDx0U&si=erRyzr9vwUc415F8"
+                                    class="lqc-link-style">Link</a>
                             </li>
-                             <li>MIT 18.404J Theory of Computation, Fall 2020
-                                <a href="https://youtube.com/playlist?list=PLUl4u3cNGP60_JNv2MmK3wkOt9syvfQWY&si=v0ZndvjwR53iwlGp" class="lqc-link-style">Link</a>
+                            <li>MIT 18.404J Theory of Computation, Fall 2020
+                                <a href="https://youtube.com/playlist?list=PLUl4u3cNGP60_JNv2MmK3wkOt9syvfQWY&si=v0ZndvjwR53iwlGp"
+                                    class="lqc-link-style">Link</a>
                             </li>
 
-              <li>Advanced Data Structure, MIT
-                                <a href="https://youtube.com/playlist?list=PLUl4u3cNGP61hsJNdULdudlRL493b-XZf&si=hpvhepEXPIdokVmh" class="lqc-link-style">Link</a>
+                            <li>Advanced Data Structure, MIT
+                                <a href="https://youtube.com/playlist?list=PLUl4u3cNGP61hsJNdULdudlRL493b-XZf&si=hpvhepEXPIdokVmh"
+                                    class="lqc-link-style">Link</a>
                             </li>
 
                             <li>Introduction to Algorithms, MIT
-                                <a href="https://youtube.com/playlist?list=PLUl4u3cNGP63EdVPNLG3ToM6LaEUuStEY&si=wUcbC0syk9tnJ_uW" class="lqc-link-style">Link</a>
+                                <a href="https://youtube.com/playlist?list=PLUl4u3cNGP63EdVPNLG3ToM6LaEUuStEY&si=wUcbC0syk9tnJ_uW"
+                                    class="lqc-link-style">Link</a>
                             </li>
                             <li>Design and Analysis of Algorithms, MIT.
-                                <a href="https://youtube.com/playlist?list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp&si=IyDmglUABFYR3odt" class="lqc-link-style">Link</a>
+                                <a href="https://youtube.com/playlist?list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp&si=IyDmglUABFYR3odt"
+                                    class="lqc-link-style">Link</a>
                             </li>
-                            
+
                             <li>Algorithmic Lower Bounds, MIT
-                                <a href="https://youtube.com/playlist?list=PLUl4u3cNGP63d33STUUBfZUpzFCVR5-PV&si=PZQSDl4-Q8U2XF5t" class="lqc-link-style">Link</a>
+                                <a href="https://youtube.com/playlist?list=PLUl4u3cNGP63d33STUUBfZUpzFCVR5-PV&si=PZQSDl4-Q8U2XF5t"
+                                    class="lqc-link-style">Link</a>
                             </li>
-                            
-                            
+
+
                             <li>Quantum Computation and Information at CMU ,Dr.Ryan O'Donnell, CMU.
-                                <a href="https://youtube.com/playlist?list=PLm3J0oaFux3YL5qLskC6xQ24JpMwOAeJz&si=I5tTxnzDNg7XBFml" class="lqc-link-style">Link</a>
+                                <a href="https://youtube.com/playlist?list=PLm3J0oaFux3YL5qLskC6xQ24JpMwOAeJz&si=I5tTxnzDNg7XBFml"
+                                    class="lqc-link-style">Link</a>
                             </li>
-                            
+
                             <li>Quantum Algorithms, Prof. Andrew Childs,UMD.
                                 <a href="https://www.cs.umd.edu/~amchilds/qa/" class="lqc-link-style">Link</a>
                             </li>
@@ -228,53 +310,64 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
                                 <a href="https://arxiv.org/pdf/0804.3401" class="lqc-link-style">Link</a>
                             </li>
                             <li>Quantum Walks, Dr. Renato Portugal,
-                                <a href="http://ndl.ethernet.edu.et/bitstream/123456789/73178/1/277.pdf" class="lqc-link-style">Link</a>
+                                <a href="http://ndl.ethernet.edu.et/bitstream/123456789/73178/1/277.pdf"
+                                    class="lqc-link-style">Link</a>
                             </li>
                             <li>Graph Theory, Prof. Soumen Maity, IISER Pune
-                                <a href="https://youtube.com/playlist?list=PLEAYkSg4uSQ2fXcfrTGZdPuTmv98bnFY5&si=viq2_I3rKWbv4k2E" class="lqc-link-style">Link</a>
+                                <a href="https://youtube.com/playlist?list=PLEAYkSg4uSQ2fXcfrTGZdPuTmv98bnFY5&si=viq2_I3rKWbv4k2E"
+                                    class="lqc-link-style">Link</a>
                             </li>
                             <li>Quantum Simulation, QGSS 2023,IBM.
-                                <a href="https://youtube.com/playlist?list=PLOFEBzvs-Vvo5o97bYt8o1l8Ra1poMASQ&si=liFOq3ZHFuPrlhC9" class="lqc-link-style">Link</a> <br>
+                                <a href="https://youtube.com/playlist?list=PLOFEBzvs-Vvo5o97bYt8o1l8Ra1poMASQ&si=liFOq3ZHFuPrlhC9"
+                                    class="lqc-link-style">Link</a> <br>
                                 (more helpful if done after QM, condensed matter theory and Numerical methods)
                             </li>
                             <li>Quantum Algorithms for Optimizers, Dr.Giacomo nannicini,USC.
                                 <a href="https://arxiv.org/pdf/2408.07086" class="lqc-link-style">Link</a> <br>
-                                
+
                             </li>
- <li>Quantum Algorithms for Scientific Computation, Prof.Lin Lin,UC Berkeley.
-                                <a href="https://math.berkeley.edu/~linlin/qasc/qasc_notes.pdf" class="lqc-link-style">Link</a> <br>
-                                
+                            <li>Quantum Algorithms for Scientific Computation, Prof.Lin Lin,UC Berkeley.
+                                <a href="https://math.berkeley.edu/~linlin/qasc/qasc_notes.pdf"
+                                    class="lqc-link-style">Link</a> <br>
+
                             </li>
                             <li>Quantum Algorithm Zoo (Your one stop destination for latest Quantum Algorithms).
                                 <a href="https://quantumalgorithmzoo.org/" class="lqc-link-style">Link</a> <br>
                             </li>
-                            
+
                             <li><b>Interesting Papers on Quantum Algorithms.</b>
                                 <ol class="lqc-ordered-list" type="i">
-                                <li> Quantum algorithms papers
-                                <a href="https://github.com/manjunath5496/Quantum-Algorithm-Papers" class="lqc-link-style">Link</a> <br>
-                                
-                                </li> 
-                                <li> Quantum algorithms: an overview Prof. Ashley Montanaro (Good overview of Quantum Algorithms use cases).
-                                <a href="https://arxiv.org/pdf/1511.04206" class="lqc-link-style">Link</a> <br>
-                                
-                                </li>   
-                                    
-                                <li> Quantum algorithms: A survey of applications and end-to-end complexities by Dr. Alexander M. Dalzell et al. (detailed review of Quantum Algorithms and their applications).
-                                <a href="https://arxiv.org/pdf/2310.03011" class="lqc-link-style">Link</a> <br>
-                                
-                                </li>  
-                                    
-                                <li> Quantum Algorithm Design: Techniques and Applications SHAO Changpeng et al. (You know to how to access this:) )
-                                <a href="https://link.springer.com/article/10.1007/s11424-019-9008-0" class="lqc-link-style">Link</a> <br>
-                                
-                                </li>  
+                                    <li> Quantum algorithms papers
+                                        <a href="https://github.com/manjunath5496/Quantum-Algorithm-Papers"
+                                            class="lqc-link-style">Link</a> <br>
 
-                                 <li> Quantum Computation as Geometry Michael A. Nielsen et al.
-                                <a href="https://arxiv.org/pdf/quant-ph/0603161" class="lqc-link-style">Link</a> <br>
-                                
-                                </li>  
-                                
+                                    </li>
+                                    <li> Quantum algorithms: an overview Prof. Ashley Montanaro (Good overview of
+                                        Quantum Algorithms use cases).
+                                        <a href="https://arxiv.org/pdf/1511.04206" class="lqc-link-style">Link</a> <br>
+
+                                    </li>
+
+                                    <li> Quantum algorithms: A survey of applications and end-to-end complexities by Dr.
+                                        Alexander M. Dalzell et al. (detailed review of Quantum Algorithms and their
+                                        applications).
+                                        <a href="https://arxiv.org/pdf/2310.03011" class="lqc-link-style">Link</a> <br>
+
+                                    </li>
+
+                                    <li> Quantum Algorithm Design: Techniques and Applications SHAO Changpeng et al.
+                                        (You know to how to access this:) )
+                                        <a href="https://link.springer.com/article/10.1007/s11424-019-9008-0"
+                                            class="lqc-link-style">Link</a> <br>
+
+                                    </li>
+
+                                    <li> Quantum Computation as Geometry Michael A. Nielsen et al.
+                                        <a href="https://arxiv.org/pdf/quant-ph/0603161" class="lqc-link-style">Link</a>
+                                        <br>
+
+                                    </li>
+
                             </li>
                         </ol>
                     </div>
@@ -284,7 +377,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
                 <div class="resume-item d-flex flex-column flex-md-row mb-5">
                     <div class="resume-content mr-auto">
                         <h3 class="mb-0">4. Quantum Machine Learning and Classical Machine Learning</h3>
-                        <p>Same with Quantum Machine Learning you need familiarity with “classical” machine learning first. This is
+                        <p>Same with Quantum Machine Learning you need familiarity with “classical” machine learning
+                            first. This is
                             already done to some extend in these texts but I am stilling putting a great resource for
                             classical ML which is Andrew ng course on ML which can supplement it, It is paid though,
                             knowledge is not easy to access sometime but you know what to do ☺.</p>
@@ -292,26 +386,32 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
 
                         <ol class="lqc-ordered-list" type="a">
                             <li>Machine Learning Specialization by Prof. Andrew Ng, Stanford
-                                <a href="https://www.coursera.org/specializations/machine-learning-introduction?utm_medium=sem&utm_source=gg&utm_campaign=b2c_india_machine-learning-introduction_stanford-deeplearning.ai_ftcof_specializations_arte_sep-23_dr_sem_rsa_gads_lg-all&campaignid=20594446971&adgroupid=161332312026&device=c&keyword=coursera%20machine%20learning%20andrew%20ng&matchtype=p&network=g&devicemodel=&adposition=&creativeid=698085043093&hide_mobile_promo&gad_source=1&gclid=Cj0KCQjw-ai0BhDPARIsAB6hmP4dCi4WEmSws62lNgTOycGmrpw93orSD0J_qggE2tzDN3JoIZORjlIaAh8GEALw_wcB" class="lqc-link-style">Link</a>
+                                <a href="https://www.coursera.org/specializations/machine-learning-introduction?utm_medium=sem&utm_source=gg&utm_campaign=b2c_india_machine-learning-introduction_stanford-deeplearning.ai_ftcof_specializations_arte_sep-23_dr_sem_rsa_gads_lg-all&campaignid=20594446971&adgroupid=161332312026&device=c&keyword=coursera%20machine%20learning%20andrew%20ng&matchtype=p&network=g&devicemodel=&adposition=&creativeid=698085043093&hide_mobile_promo&gad_source=1&gclid=Cj0KCQjw-ai0BhDPARIsAB6hmP4dCi4WEmSws62lNgTOycGmrpw93orSD0J_qggE2tzDN3JoIZORjlIaAh8GEALw_wcB"
+                                    class="lqc-link-style">Link</a>
                             </li>
                             <li>Quantum Machine Learning QGSS 2021,IBM
-                                <a href="https://youtube.com/playlist?list=PLOFEBzvs-VvqJwybFxkTiDzhf5E11p8BI&si=nKHyNyWqpmS0C07Q" class="lqc-link-style">Link</a>
+                                <a href="https://youtube.com/playlist?list=PLOFEBzvs-VvqJwybFxkTiDzhf5E11p8BI&si=nKHyNyWqpmS0C07Q"
+                                    class="lqc-link-style">Link</a>
                             </li>
                             <li>Quantum Machine Learning, Late. Dr. Peter wittek,UoT
-                                <a href="https://youtube.com/playlist?list=PLmRxgFnCIhaMgvot-Xuym_hn69lmzIokg&si=ZMup_5PZn4zD9mHT" class="lqc-link-style">Link</a>
+                                <a href="https://youtube.com/playlist?list=PLmRxgFnCIhaMgvot-Xuym_hn69lmzIokg&si=ZMup_5PZn4zD9mHT"
+                                    class="lqc-link-style">Link</a>
                             </li>
                             <li>Quantum Algorithms for Data Analysis, Alessandro Luongo, CQT NUS
                                 <a href="https://quantumalgorithms.org/" class="lqc-link-style">Link</a>
                             </li>
                             <li>Machine Learning with Quantum Computers, Dr.Maria Schuld, Xanadu
                                 This is an old copy which only covers supervised learning but I trust you to find the
-                                updated one your own which is more complete, I cannot share it here due to copyright issues. Search with the
+                                updated one your own which is more complete, I cannot share it here due to copyright
+                                issues. Search with the
                                 name written, it is correct.
 
-                                <a href="http://ndl.ethernet.edu.et/bitstream/123456789/73371/1/320.pdf" class="lqc-link-style">Link</a>
+                                <a href="http://ndl.ethernet.edu.et/bitstream/123456789/73371/1/320.pdf"
+                                    class="lqc-link-style">Link</a>
                             </li>
                             <li>Quantum Machine Learning practical, Pennylane
-                                <a href="https://pennylane.ai/qml/quantum-machine-learning/" class="lqc-link-style">Link</a>
+                                <a href="https://pennylane.ai/qml/quantum-machine-learning/"
+                                    class="lqc-link-style">Link</a>
                             </li>
 
                         </ol>
@@ -334,27 +434,32 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
                                 Go through his blogs on Classical and Quantum Error correction for Introduction to QEC
                                 and stabilizer theory.
                             </li>
-																										 <li>Quantum Error Correction course by Google: A modern take, Google
-                                <a href="https://coursera.org/learn/quantum-error-correction">Link</a>
+                            <li>Quantum Error Correction course by Google: A modern take, Google
+                                <a href="https://coursera.org/learn/quantum-error-correction
+">Link</a>
                                 <br>
-                                Course flips the traditional way of learning QEC and directly takes you to the application and interesting stuff.
+                                Course flips the traditional way of learning QEC and directly takes you to the
+                                application and interesting stuff.
                             </li>
 
                             <li>Quantum Error Correction,Prof. Gotessmann and Prof. Yoshida,Perimeter Institute
                                 <a href="https://pirsa.org/c17045" class="lqc-link-style">Link</a>
                             </li>
                             <li> Surviving as Quantum Computer in Classical World,Prof. Gotessmann,UMD
-                                <a href="https://www.cs.umd.edu/class/spring2024/cmsc858G/QECCbook-2024-ch1-8.pdf">Link</a>
+                                <a
+                                    href="https://www.cs.umd.edu/class/spring2024/cmsc858G/QECCbook-2024-ch1-8.pdf">Link</a>
                             </li>
-<li>Stabilizer Code and Quantum Error correction,Thesis, Prof. Daniel Gottesmann,UMD
-                                <a href="https://thesis.library.caltech.edu/2900/2/THESIS.pdf" class="lqc-link-style">Link</a>
+                            <li>Stabilizer Code and Quantum Error correction,Thesis, Prof. Daniel Gottesmann,UMD
+                                <a href="https://thesis.library.caltech.edu/2900/2/THESIS.pdf"
+                                    class="lqc-link-style">Link</a>
                             </li>
                             <li>Quantum Error Correction, Prof. Daniel A. Lidar and Prof.Todd A. Brunn.
-                                <a href="https://books.google.co.in/books/about/Quantum_Error_Correction.html?id=bM5KngEACAAJ&redir_esc=y" class="lqc-link-style">Link</a>
+                                <a href="https://books.google.co.in/books/about/Quantum_Error_Correction.html?id=bM5KngEACAAJ&redir_esc=y"
+                                    class="lqc-link-style">Link</a>
                                 <br>
                                 Here too I think you can find the book on your own.
                             </li>
-                            
+
 
                         </ol>
                     </div>
@@ -368,11 +473,13 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
 
                         <ol class="lqc-ordered-list" type="a">
                             <li>Information and Coding Theory, Prof. Ranjan Bose.
-                                <a href="https://www.youtube.com/watch?v=U4dzerJHIFw&list=PLp6ek2hDcoNBtaNoXzFE3BYKNZ2kUJo1f" class="lqc-link-style">Link</a>
+                                <a href="https://www.youtube.com/watch?v=U4dzerJHIFw&list=PLp6ek2hDcoNBtaNoXzFE3BYKNZ2kUJo1f"
+                                    class="lqc-link-style">Link</a>
 
                             </li>
                             <li>Elements of Information theory, Thomas Cover.
-                                <a href="http://staff.ustc.edu.cn/~cgong821/Wiley.Interscience.Elements.of.Information.Theory.Jul.2006.eBook-DDU.pdf" class="lqc-link-style">Link</a>
+                                <a href="http://staff.ustc.edu.cn/~cgong821/Wiley.Interscience.Elements.of.Information.Theory.Jul.2006.eBook-DDU.pdf"
+                                    class="lqc-link-style">Link</a>
                             </li>
                             <li>From Classical to Quantum Shannon Theory Dr. Mark M.Wilde,Cornell university.
                                 <a href="https://markwilde.com/qit-notes.pdf" class="lqc-link-style">Link</a>
@@ -398,11 +505,13 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
 
                         <ol class="lqc-ordered-list" type="a">
                             <li>Introduction to Cryptography, Neso Academy
-                                <a href="https://www.youtube.com/watch?v=JoeiLuFNBc4&list=PLBlnK6fEyqRgJU3EsOYDTW7m6SUmW6kII" class="lqc-link-style">Link</a>
+                                <a href="https://www.youtube.com/watch?v=JoeiLuFNBc4&list=PLBlnK6fEyqRgJU3EsOYDTW7m6SUmW6kII"
+                                    class="lqc-link-style">Link</a>
 
                             </li>
                             <li>Post-Quantum Cryptography, Prof. Tanja Lange,TUE
-                                <a href="https://youtube.com/playlist?list=PLidiQIHRzpXLBZZhZ82k1n-AgBo8ioC1t&si=k7xLYVWWcXTR9ipY" class="lqc-link-style">Link</a>
+                                <a href="https://youtube.com/playlist?list=PLidiQIHRzpXLBZZhZ82k1n-AgBo8ioC1t&si=k7xLYVWWcXTR9ipY"
+                                    class="lqc-link-style">Link</a>
                             </li>
 
                         </ol>
@@ -425,79 +534,98 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
                         <div class="subheading mb-3"></div>
 
                         <ol class="lqc-ordered-list" type="a">
-                             <li>Quantum Hardware Course (A great introduction to Quantum Hardware (optical setups) by Zaiku Group)
-                                <a href="https://youtube.com/playlist?list=PL6N_Y7ao_aHtgy4NlePfUjnqF3IDi2xjr&si=uFUV2QCc-PXvMx-j" class="lqc-link-style">Link</a>
+                            <li>Quantum Hardware Course (A great introduction to Quantum Hardware (optical setups) by
+                                Zaiku Group)
+                                <a href="https://youtube.com/playlist?list=PL6N_Y7ao_aHtgy4NlePfUjnqF3IDi2xjr&si=uFUV2QCc-PXvMx-j"
+                                    class="lqc-link-style">Link</a>
 
                             </li>
-                            
+
                             <li>Optics,MIT
-                                <a href="https://youtube.com/playlist?list=PLEA084AC2DD3CEC09&si=tcJRmeKlrTA8TFoe" class="lqc-link-style">Link</a>
+                                <a href="https://youtube.com/playlist?list=PLEA084AC2DD3CEC09&si=tcJRmeKlrTA8TFoe"
+                                    class="lqc-link-style">Link</a>
 
                             </li>
                             <li>Non-Linear optics,Prof. K.Thyagarajan,IIT Delhi
-                                <a href="https://youtube.com/playlist?list=PL641752BF0D96C2A6&si=z3lB3tOSaWDdKH7m" class="lqc-link-style">Link</a>
+                                <a href="https://youtube.com/playlist?list=PL641752BF0D96C2A6&si=z3lB3tOSaWDdKH7m"
+                                    class="lqc-link-style">Link</a>
                             </li>
                             <li>Quantum optics 1, Prof. Ivan H. Deutsch,UNM
-                                <a href="http://info.phys.unm.edu/~ideutsch/Classes/Phys566F21/index.html" class="lqc-link-style">Link</a>
+                                <a href="http://info.phys.unm.edu/~ideutsch/Classes/Phys566F21/index.html"
+                                    class="lqc-link-style">Link</a>
                             </li>
                             <li>Quantum optics 2, Prof. Ivan H. Deutsch,UNM
-                                <a href="http://info.phys.unm.edu/~ideutsch/Classes/Phys581S24/index.html" class="lqc-link-style">Link</a>
+                                <a href="http://info.phys.unm.edu/~ideutsch/Classes/Phys581S24/index.html"
+                                    class="lqc-link-style">Link</a>
                             </li>
                             <li>Quantum optics Dr. Gustavo Aroeira,Emory University
-                                <a href="https://youtube.com/playlist?list=PL4_zMhS4uvR8dSbM-%20%20%20%20%20%20f_KDivMIAHi3guq2&si=adWtg9B_4KCmIne7" class="lqc-link-style">Link</a>
+                                <a href="https://youtube.com/playlist?list=PL4_zMhS4uvR8dSbM-%20%20%20%20%20%20f_KDivMIAHi3guq2&si=adWtg9B_4KCmIne7"
+                                    class="lqc-link-style">Link</a>
                             </li>
 
                             <li>Analog electronics, Prof. Shanthi Pavan,IIT Madras
-                                <a href="https://youtube.com/playlist?list=PLyqSpQzTE6M9YEdrct_JIT8WWmGMEXcPA&si=XZBi3Qf04WtqBA2b" class="lqc-link-style">Link</a>
+                                <a href="https://youtube.com/playlist?list=PLyqSpQzTE6M9YEdrct_JIT8WWmGMEXcPA&si=XZBi3Qf04WtqBA2b"
+                                    class="lqc-link-style">Link</a>
                             </li>
                             <li>Digital electronics, Prof.S.Srinivasan,IIT Madras
-                                <a href="https://youtube.com/playlist?list=PL803563859BF7ED8C&si=0MGPjv9-h4h1RhTx" class="lqc-link-style">Link</a>
+                                <a href="https://youtube.com/playlist?list=PL803563859BF7ED8C&si=0MGPjv9-h4h1RhTx"
+                                    class="lqc-link-style">Link</a>
                             </li>
                             <li>Digital Electronics, Neso Academy(Again a shortcut)
-                                <a href="https://youtube.com/playlist?list=PLBlnK6fEyqRjMH3mWf6kwqiTbT798eAOm&si=WI0paDzK8NDFu0KO" class="lqc-link-style">Link</a>
+                                <a href="https://youtube.com/playlist?list=PLBlnK6fEyqRjMH3mWf6kwqiTbT798eAOm&si=WI0paDzK8NDFu0KO"
+                                    class="lqc-link-style">Link</a>
                             </li>
-<li>Practical Electronics for inventors, Scherz
-                                <a href="https://instrumentacion.qi.fcen.uba.ar/libro/Scherz.pdf"class="lqc-link-style">Link</a>
+                            <li>Practical Electronics for inventors, Scherz
+                                <a href="https://instrumentacion.qi.fcen.uba.ar/libro/Scherz.pdf"
+                                    class="lqc-link-style">Link</a>
                             </li>
-                <li>Digital Signal processing, Prof. S.C Dutta Roy, IIT Delhi
-                                <a href="https://youtube.com/playlist?list=PL9567DFCA3A66F299&si=YFzxCGrr0M31JKXj" class="lqc-link-style">Link</a>
+                            <li>Digital Signal processing, Prof. S.C Dutta Roy, IIT Delhi
+                                <a href="https://youtube.com/playlist?list=PL9567DFCA3A66F299&si=YFzxCGrr0M31JKXj"
+                                    class="lqc-link-style">Link</a>
                             </li>
                             <li>Control systems, Prof. C. S. Shankar Ram, IIT Madras
-                                <a href="https://youtube.com/playlist?list=PLyqSpQzTE6M8-wda5vbgHkMQTmu-21hRK&si=14tYE7o1sc9z11wN" class="lqc-link-style">Link</a>
+                                <a href="https://youtube.com/playlist?list=PLyqSpQzTE6M8-wda5vbgHkMQTmu-21hRK&si=14tYE7o1sc9z11wN"
+                                    class="lqc-link-style">Link</a>
 
                             </li>
                             <p>This particular course of control system has lot of use in Quantum sensing and metrology
                                 too.
 
-                            <li>FPGA
-                                <a href="https://www.amazon.in/FPGA-Based-Embedded-System-Developers-Guide/dp/1498796753" class="lqc-link-style">Link</a>
-                                <p>FPGA-Based Embedded System Developers Guide,Prof. Bazil Raj,DIAT Pune. <br>
-                                    It is paid but you know what to do.</p>
-                            </li>
+                                <li>FPGA
+                                    <a href="https://www.amazon.in/FPGA-Based-Embedded-System-Developers-Guide/dp/1498796753"
+                                        class="lqc-link-style">Link</a>
+                                    <p>FPGA-Based Embedded System Developers Guide,Prof. Bazil Raj,DIAT Pune. <br>
+                                        It is paid but you know what to do.</p>
+                                </li>
 
-                            <li> FPGA project using Basys 3, Prof. mughal
-                                <a href="https://youtube.com/playlist?list=PLqFzqzGMquZxGdkwBd9C2RSLIIlS5IxcK&si=xadIiJKgn0NH-8UD" class="lqc-link-style">Link</a>
+                                <li> FPGA project using Basys 3, Prof. mughal
+                                    <a href="https://youtube.com/playlist?list=PLqFzqzGMquZxGdkwBd9C2RSLIIlS5IxcK&si=xadIiJKgn0NH-8UD"
+                                        class="lqc-link-style">Link</a>
 
 
-                            
-                                <br>
-                            For practical and specific courses on superconducting qubits, I recommend starting with
-                            the IBM Qiskit Global Summer School 2020. Following that, explore Qiskit Metal.
+
+                                    <br>
+                                    For practical and specific courses on superconducting qubits, I recommend starting
+                                    with
+                                    the IBM Qiskit Global Summer School 2020. Following that, explore Qiskit Metal.
                             </p>
                             <li>Qiskit Global Summer School 2020,IBM (refer to last section)
-                                <a href="https://youtube.com/playlist?list=PLAs3xnpWemZXgn9zN8D1HSCSTBz-whRco&si=YQlRdxg0Nxuz8ODP" class="lqc-link-style">Link</a>
+                                <a href="https://youtube.com/playlist?list=PLAs3xnpWemZXgn9zN8D1HSCSTBz-whRco&si=YQlRdxg0Nxuz8ODP"
+                                    class="lqc-link-style">Link</a>
 
                             </li>
                             <li>Qiskit Metal
-                                <a href="https://qiskit-community.github.io/qiskit-metal/" class="lqc-link-style">Link</a>
+                                <a href="https://qiskit-community.github.io/qiskit-metal/"
+                                    class="lqc-link-style">Link</a>
                             </li>
-                            
+
                             <li>Circuit QED — Lecture Notes
                                 <a href="https://arxiv.org/pdf/1310.1897" class="lqc-link-style">Link</a>
                             </li>
-                            
+
                             <li>A quantum engineer's guide to superconducting qubits
-                                <a href="https://pubs.aip.org/aip/apr/article/6/2/021318/570326/A-quantum-engineer-s-guide-to-superconducting" class="lqc-link-style">Link</a>
+                                <a href="https://pubs.aip.org/aip/apr/article/6/2/021318/570326/A-quantum-engineer-s-guide-to-superconducting"
+                                    class="lqc-link-style">Link</a>
                             </li>
                         </ol>
                     </div>
@@ -507,15 +635,18 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
                 <div class="resume-item d-flex flex-column flex-md-row mb-5">
                     <div class="resume-content mr-auto">
                         <h3 class="mb-0">9. ZX-Calculus </h3>
-                        <p>I was confused where to put this in QEC or QM but this is such a crucial and innovative field that
+                        <p>I was confused where to put this in QEC or QM but this is such a crucial and innovative field
+                            that
                             I think it deserves a section of its own. I have lot of resources for this but I will just
-                            put one to go stop for this that is ZX website. Also I suggest whoever interested in this to join discord group
+                            put one to go stop for this that is ZX website. Also I suggest whoever interested in this to
+                            join discord group
                             for help needed with ZX-Calculus.
 
                             <a href="https://zxcalculus.com/" class="lqc-link-style">Link</a>
                             <br>
 
-                            You can find everything needed is on the website about ZX-Calculus except my MS thesis which is on use case of ZX calculus
+                            You can find everything needed is on the website about ZX-Calculus except my MS thesis which
+                            is on use case of ZX calculus
                             and which I need to publish, Good reminder phew!!
                         </p>
 
@@ -533,12 +664,13 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
                         <div class="subheading mb-3"></div>
 
                         <ol class="lqc-ordered-list" type="a">
-                            
+
                             <li>Open Quantum Problems, IQOQI Vienna.
-                                <a href="https://oqp.iqoqi.oeaw.ac.at/open-quantum-problems" class="lqc-link-style">Link</a>
+                                <a href="https://oqp.iqoqi.oeaw.ac.at/open-quantum-problems"
+                                    class="lqc-link-style">Link</a>
 
                             </li>
-                            
+
                             <li>Scott Aaronson blogs for general Quantum Computing stuff.
                                 <a href="https://scottaaronson.blog/" class="lqc-link-style">Link</a>
 
@@ -553,15 +685,19 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
                                 <a href="https://www.quantiki.org/" class="lqc-link-style">Link</a>
                             </li>
                             <li>For latest updates on jobs, internships and conferences subscribe to ORNL QCI Digest.
-                                <a href="https://elist.ornl.gov/mailman/listinfo/qci-external" class="lqc-link-style">Link</a>
+                                <a href="https://elist.ornl.gov/mailman/listinfo/qci-external"
+                                    class="lqc-link-style">Link</a>
                             </li>
-                            <li>Learn Qiskit and Quantum computing from IBM (should have made a separate section for this:) ).
+                            <li>Learn Qiskit and Quantum computing from IBM (should have made a separate section for
+                                this:) ).
                                 <a href="https://learning.quantum.ibm.com/" class="lqc-link-style">Link</a>
                             </li>
-                            <li>CS50 Introduction to Programming using Python, Harvard (Good introduction to basic programming).
+                            <li>CS50 Introduction to Programming using Python, Harvard (Good introduction to basic
+                                programming).
                                 <a href="https://cs50.harvard.edu/python/2022/" class="lqc-link-style">Link</a>
                             </li>
-                            <li>Project Euler: If you love to code and like maths challenges (Not directly related to Quantum Computing).
+                            <li>Project Euler: If you love to code and like maths challenges (Not directly related to
+                                Quantum Computing).
                                 <a href="https://projecteuler.net/" class="lqc-link-style">Link</a>
                             </li>
 
@@ -595,19 +731,24 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
 
                         <ol class="lqc-ordered-list" type="a">
                             <li>Quantum Physics 1,MIT
-                                <a href="https://www.youtube.com/watch?v=jANZxzetPaQ&list=PLUl4u3cNGP60cspQn3N9dYRPiyVWDd80G" class="lqc-link-style">Link</a>
+                                <a href="https://www.youtube.com/watch?v=jANZxzetPaQ&list=PLUl4u3cNGP60cspQn3N9dYRPiyVWDd80G"
+                                    class="lqc-link-style">Link</a>
                             </li>
                             <li>Quantum Physics 2,MIT
-                                <a href="https://www.youtube.com/watch?v=QI13S04w8dM&list=PLUl4u3cNGP60QlYNsy52fctVBOlk-4lYx" class="lqc-link-style">Link</a>
+                                <a href="https://www.youtube.com/watch?v=QI13S04w8dM&list=PLUl4u3cNGP60QlYNsy52fctVBOlk-4lYx"
+                                    class="lqc-link-style">Link</a>
                             </li>
                             <li>Quantum Physics 3,MIT
-                                <a href="https://www.youtube.com/watch?v=_OZXEb8FxZQ&list=PLUl4u3cNGP60Zcz8LnCDFI8RPqRhJbb4L" class="lqc-link-style">Link</a>
+                                <a href="https://www.youtube.com/watch?v=_OZXEb8FxZQ&list=PLUl4u3cNGP60Zcz8LnCDFI8RPqRhJbb4L"
+                                    class="lqc-link-style">Link</a>
                             </li>
                             <li>Book: Quantum Mechanics by Cohen-Tonnoudji et al. Vol:1,2,3
-                                <a href="https://www.ifsc.usp.br/~strontium/Publication/Scripts/QuantumMechanicsScript.pdf" class="lqc-link-style">Link</a>
+                                <a href="https://www.ifsc.usp.br/~strontium/Publication/Scripts/QuantumMechanicsScript.pdf"
+                                    class="lqc-link-style">Link</a>
                             </li>
                             <li>Sakurai is a great resource too.
-                                <a href="https://icourse.club/uploads/files/65fb4c16648d2b93f82fe3271c3381c211f2f532.pdf" class="lqc-link-style">Link</a>
+                                <a href="https://icourse.club/uploads/files/65fb4c16648d2b93f82fe3271c3381c211f2f532.pdf"
+                                    class="lqc-link-style">Link</a>
                             </li>
                         </ol>
                     </div>
@@ -628,14 +769,18 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
 
                         <ol class="lqc-ordered-list" type="a">
                             <li>Security of Quantum Key Distribution, Dr. Ramona Wolf
-                                <a href="https://youtube.com/playlist?list=PL7PbuDFCebIQjjgaiJfc6vW9gdvqcPto3&si=iU56EK0Wexe2F6wQ" class="lqc-link-style">Link</a>
+                                <a href="https://youtube.com/playlist?list=PL7PbuDFCebIQjjgaiJfc6vW9gdvqcPto3&si=iU56EK0Wexe2F6wQ"
+                                    class="lqc-link-style">Link</a>
                             </li>
                             <li>Applied Quantum Cryptography, Dr. Kollmitzer et al. <br>
                                 Not fully accessible again you know what to do☺.
-                                <a href="https://books.google.co.ke/books?id=_hluCQAAQBAJ&printsec=frontcover%23v=onepage&q&f=false" class="lqc-link-style">Link</a>
+                                <a href="https://books.google.co.ke/books?id=_hluCQAAQBAJ&printsec=frontcover%23v=onepage&q&f=false"
+                                    class="lqc-link-style">Link</a>
                             </li>
-                            <li>If you still want more resources I suggest this YouTube channel "Q-Leap Edu Quantum Communications"
-                                <a href="https://www.youtube.com/@QuantumCommEdu/playlists" class="lqc-link-style">Link</a>
+                            <li>If you still want more resources I suggest this YouTube channel "Q-Leap Edu Quantum
+                                Communications"
+                                <a href="https://www.youtube.com/@QuantumCommEdu/playlists"
+                                    class="lqc-link-style">Link</a>
                             </li>
                         </ol>
                     </div>
@@ -645,7 +790,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
 
         </section>
 
-        
+
 
         <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
             <div class="my-auto">
@@ -673,17 +818,19 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
             <div class="my-auto">
                 <h2 class="mb-5 headind-bold">General Physics:</h2>
 
-                <p>This section is more inclined towards physics majors and those interested in theoretical physics, rather than solely focusing on quantum computing. It is aimed at the level of a senior BS-MS student or even a graduate student.
+                <p>This section is more inclined towards physics majors and those interested in theoretical physics,
+                    rather than solely focusing on quantum computing. It is aimed at the level of a senior BS-MS student
+                    or even a graduate student.
                 </p>
 
-                
+
 
                 <div class="resume-item d-flex flex-column flex-md-row mb-5">
                     <div class="resume-content mr-auto">
-                        
+
                         <h3 class="mb-0">Common advice</h3>
-                        
-                        
+
+
                         <div class="subheading mb-3"></div>
 
                         <ol class="lqc-ordered-list" type="1">
@@ -691,157 +838,193 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
                                 <a href="https://www.goodtheorist.science/" class="lqc-link-style">Link</a>
                             </li>
                             <li>Prof.David Tong: Lectures on Theoretical Physics.
-                                <a href="https://www.damtp.cam.ac.uk/user/tong/teaching.html" class="lqc-link-style">Link</a> <br>
-                                From here I will again compile a list according to my convenience though keeping in perspective both profs. core ideas.
+                                <a href="https://www.damtp.cam.ac.uk/user/tong/teaching.html"
+                                    class="lqc-link-style">Link</a> <br>
+                                From here I will again compile a list according to my convenience though keeping in
+                                perspective both profs. core ideas.
 
                             </li>
                         </ol>
-                       <h3 class="mb-0">Courses</h3>
-                        
-                        
-                       <div class="subheading mb-3"></div>
+                        <h3 class="mb-0">Courses</h3>
 
- <ol class="lqc-ordered-list" type="1" start="3">
+
+                        <div class="subheading mb-3"></div>
+
+                        <ol class="lqc-ordered-list" type="1" start="3">
                             <li>Waves and Oscillations, MIT
-                                <a href="https://youtube.com/playlist?list=PLUl4u3cNGP61R5sPDPKVfcFlu95wSs2Kx&si=8IYA0J90KiKxg7vG" class="lqc-link-style">Link</a>
+                                <a href="https://youtube.com/playlist?list=PLUl4u3cNGP61R5sPDPKVfcFlu95wSs2Kx&si=8IYA0J90KiKxg7vG"
+                                    class="lqc-link-style">Link</a>
                             </li>
                             <li>Mathematical methods for Physicists
                                 By Prof. Samudra Roy,IIT KGP
-                                
-                                <a href="https://youtube.com/playlist?list=PLq-Gm0yRYwThklRVGuMC01Gl7m1YSv_qn&si=JXIPeaF3TQxlvbTx" class="lqc-link-style">Link</a>
+
+                                <a href="https://youtube.com/playlist?list=PLq-Gm0yRYwThklRVGuMC01Gl7m1YSv_qn&si=JXIPeaF3TQxlvbTx"
+                                    class="lqc-link-style">Link</a>
                             </li>
                             <li>Mathematical methods for Physics and Engineering, GP Sir
-                                <a href="https://youtube.com/playlist?list=PLU6SqdYcYsfKbc7uTvC81snT_IBpfTWXR&si=yHUx2IxDHj2JFbq1Classical%20Mechanics" class="lqc-link-style">Link</a>
+                                <a href="https://youtube.com/playlist?list=PLU6SqdYcYsfKbc7uTvC81snT_IBpfTWXR&si=yHUx2IxDHj2JFbq1Classical%20Mechanics"
+                                    class="lqc-link-style">Link</a>
                             </li>
                             <li>Classical mechanics,Prof. Charudatt Kadolkar,IIT Guwahati
 
-                                <a href="https://youtube.com/playlist?list=PLwdnzlV3ogoXUbQmP-T2gPhYXeEcxP6U8&si=sbxnoWgen8NbjOeZ" class="lqc-link-style">Link</a>
+                                <a href="https://youtube.com/playlist?list=PLwdnzlV3ogoXUbQmP-T2gPhYXeEcxP6U8&si=sbxnoWgen8NbjOeZ"
+                                    class="lqc-link-style">Link</a>
                             </li>
                             <li>Special Relativity, Prof. Susskind, Stanford
-                                <a href="https://youtube.com/playlist?list=PLD9DDFBDC338226CA&si=tb0xnCnSy5KbZotW" class="lqc-link-style">Link</a>
+                                <a href="https://youtube.com/playlist?list=PLD9DDFBDC338226CA&si=tb0xnCnSy5KbZotW"
+                                    class="lqc-link-style">Link</a>
                             </li>
-                            
+
                             <li>Electromagnetism,Prof. Manoj Harbola,IIT Kanpur
-                                <a href="https://youtube.com/playlist?list=PLBZrb0wA6HTd9CclN_Ku_I065MXbHZh6U&si=KK3FdD2gaYVlVlqU" class="lqc-link-style">Link</a>
+                                <a href="https://youtube.com/playlist?list=PLBZrb0wA6HTd9CclN_Ku_I065MXbHZh6U&si=KK3FdD2gaYVlVlqU"
+                                    class="lqc-link-style">Link</a>
                             </li>
-                            
+
                             <li>Thermodynamics,MIT
-                                <a href="https://youtube.com/playlist?list=PLF6C6594F42ECEE0D&si=N5GkE0hnYO8Cp7IH" class="lqc-link-style">Link</a>
+                                <a href="https://youtube.com/playlist?list=PLF6C6594F42ECEE0D&si=N5GkE0hnYO8Cp7IH"
+                                    class="lqc-link-style">Link</a>
                             </li>
-                            
+
                             <li>Fluid Mechanics,Prof. Subashisa Dutta, IIT Guwahati
-                                <a href="https://youtube.com/playlist?list=PLwdnzlV3ogoV-ATGY2ptuLS9mwLFOJoDw&si=pR7xGCxTev6UZUGV" class="lqc-link-style">Link</a> <br>
-                                
+                                <a href="https://youtube.com/playlist?list=PLwdnzlV3ogoV-ATGY2ptuLS9mwLFOJoDw&si=pR7xGCxTev6UZUGV"
+                                    class="lqc-link-style">Link</a> <br>
+
                             </li>
-                            
+
                             <li>Nonlinear Dynamics and Chaos, Dr. Shane Ross
-                                <a href="https://youtube.com/playlist?list=PLUeHTafWecAUqSh3Gy0NNr7H3OsXoC-aK&si=ZdSshKLOykSL5Tj8" class="lqc-link-style">Link</a> <br>
-                                
+                                <a href="https://youtube.com/playlist?list=PLUeHTafWecAUqSh3Gy0NNr7H3OsXoC-aK&si=ZdSshKLOykSL5Tj8"
+                                    class="lqc-link-style">Link</a> <br>
+
                             </li>
-                            
+
                             **Include Quantum Mechanics Sequence mentioned above.
-                            
+
                             <li>Statistical Mechanics 1
-                                <a href="https://youtube.com/playlist?list=PLUl4u3cNGP60gl3fdUTKRrt5t_GPx2sRg&si=muUHsrwTy5kgK5YY" class="lqc-link-style">Link</a> <br>
-                                
+                                <a href="https://youtube.com/playlist?list=PLUl4u3cNGP60gl3fdUTKRrt5t_GPx2sRg&si=muUHsrwTy5kgK5YY"
+                                    class="lqc-link-style">Link</a> <br>
+
                             </li>
                             <li>Statistical Mechanics 2
-                                <a href="https://youtube.com/playlist?list=PLUl4u3cNGP63HkEHvYaNJiO0UCUmY0Ts7&si=lLk5i1erHgY5S-ZY" class="lqc-link-style">Link</a> <br>
-                                
+                                <a href="https://youtube.com/playlist?list=PLUl4u3cNGP63HkEHvYaNJiO0UCUmY0Ts7&si=lLk5i1erHgY5S-ZY"
+                                    class="lqc-link-style">Link</a> <br>
+
                             </li>
-                            
+
                             <li>Fundamentals of Semiconductor Devices,Prof.Digbijoy N. Nath,IISc
-                                <a href="https://youtube.com/playlist?list=PLgMDNELGJ1CaNcuuQv9xN07ZWkXE-wCGP&si=nfnEmXEkDgEedQ9q" class="lqc-link-style">Link</a> <br>
-                                
+                                <a href="https://youtube.com/playlist?list=PLgMDNELGJ1CaNcuuQv9xN07ZWkXE-wCGP&si=nfnEmXEkDgEedQ9q"
+                                    class="lqc-link-style">Link</a> <br>
+
                             </li>
-                            
+
                             <li>Electronics,Prof. D.C. Dube,IIT Delhi
-                                <a href="https://youtube.com/playlist?list=PL708EEA8184EA8F53&si=bCcRu9Md9vp3HZdV" class="lqc-link-style">Link</a> <br>
-                                
+                                <a href="https://youtube.com/playlist?list=PL708EEA8184EA8F53&si=bCcRu9Md9vp3HZdV"
+                                    class="lqc-link-style">Link</a> <br>
+
                             </li>
                             <li>Solid State Physics,Dr. Aman Kumar Das, IIT KGP
-                                <a href="https://youtube.com/playlist?list=PLADLRin7kNjG1Dlna9MDA53CMKFHPSi9m&si=L7PFormthmtkrO8g" class="lqc-link-style">Link</a> <br>
-                                
+                                <a href="https://youtube.com/playlist?list=PLADLRin7kNjG1Dlna9MDA53CMKFHPSi9m&si=L7PFormthmtkrO8g"
+                                    class="lqc-link-style">Link</a> <br>
+
                             </li>
                             <li>Advanced Condensed Matter Physics,Prof. Sourabh Basu,IIT Guwahati
-                                <a href="https://youtube.com/playlist?list=PLwdnzlV3ogoUVyxRs7-mmHu0qzNIU-gj1&si=lJydMMA20AK4yPhU" class="lqc-link-style">Link</a> <br>
-                                
+                                <a href="https://youtube.com/playlist?list=PLwdnzlV3ogoUVyxRs7-mmHu0qzNIU-gj1&si=lJydMMA20AK4yPhU"
+                                    class="lqc-link-style">Link</a> <br>
+
                             </li>
                             <li>Numerical/Computational Methods in Physics,Prof. Saurabh Basu,IIT Guwahati.
-                                <a href="https://youtube.com/playlist?list=PLwdnzlV3ogoUY43XoMwVVCWDSImC9mVQB&si=xuJIiNK5o8Txp5tU" class="lqc-link-style">Link</a> <br>
-                                
+                                <a href="https://youtube.com/playlist?list=PLwdnzlV3ogoUY43XoMwVVCWDSImC9mVQB&si=xuJIiNK5o8Txp5tU"
+                                    class="lqc-link-style">Link</a> <br>
+
                             </li>
                             <li>Experimental methods in Physics 1,Prof. Amal Kumar Das,IIT KGP
-                                <a href="https://youtube.com/playlist?list=PLbRMhDVUMngcHCX4U7syOHOmnMW7f3Z2g&si=cwJpnOcjgT2G8GZ3" class="lqc-link-style">Link</a> <br>
-                                
+                                <a href="https://youtube.com/playlist?list=PLbRMhDVUMngcHCX4U7syOHOmnMW7f3Z2g&si=cwJpnOcjgT2G8GZ3"
+                                    class="lqc-link-style">Link</a> <br>
+
                             </li>
                             <li>Experimental methods in Physics 2,Prof. Amal Kumar Das,IIT KGP
-                                <a href="https://youtube.com/playlist?list=PLbRMhDVUMngcntq74GxOcIINQGDyApYLX&si=MwtUf57BTyHJAnMG" class="lqc-link-style">Link</a> <br>
-                                
+                                <a href="https://youtube.com/playlist?list=PLbRMhDVUMngcntq74GxOcIINQGDyApYLX&si=MwtUf57BTyHJAnMG"
+                                    class="lqc-link-style">Link</a> <br>
+
                             </li>
                             <li>AMO Physics 1,MIT
-                                <a href="https://youtube.com/playlist?list=PLUl4u3cNGP62FPGcyFJkzhqq9c5cHCK32&si=TGqA8hh0PVPQPCdx" class="lqc-link-style">Link</a> <br>
-                                
+                                <a href="https://youtube.com/playlist?list=PLUl4u3cNGP62FPGcyFJkzhqq9c5cHCK32&si=TGqA8hh0PVPQPCdx"
+                                    class="lqc-link-style">Link</a> <br>
+
                             </li>
                             <li>AMO Physics 2,MIT
-                                <a href="https://youtube.com/playlist?list=PLUl4u3cNGP62uOSArqLf4vNLiZtgIRm1K&si=Mizz_oGFdXIYxbk6" class="lqc-link-style">Link</a> <br>
-                                
+                                <a href="https://youtube.com/playlist?list=PLUl4u3cNGP62uOSArqLf4vNLiZtgIRm1K&si=Mizz_oGFdXIYxbk6"
+                                    class="lqc-link-style">Link</a> <br>
+
                             </li>
                             <li>Nuclear and Particle Physics,MIT
-                                <a href="https://youtube.com/playlist?list=PLUl4u3cNGP60Do91PdN978llIsvjKW0au&si=l-q1AR8L-4RE8i0j" class="lqc-link-style">Link</a> <br>
-                                
+                                <a href="https://youtube.com/playlist?list=PLUl4u3cNGP60Do91PdN978llIsvjKW0au&si=l-q1AR8L-4RE8i0j"
+                                    class="lqc-link-style">Link</a> <br>
+
                             </li>
-                            
+
                             <li>General Astronomy,Spahn's Science Lectures
-                                <a href="https://youtube.com/playlist?list=PLNycEeeRg4mXbYSrbzsAdubj1qcubqsz-&si=Pw3u4Dmhp6VzQNAb" class="lqc-link-style">Link</a> <br>
-                                
+                                <a href="https://youtube.com/playlist?list=PLNycEeeRg4mXbYSrbzsAdubj1qcubqsz-&si=Pw3u4Dmhp6VzQNAb"
+                                    class="lqc-link-style">Link</a> <br>
+
                             </li>
-                            
-                            <li>Astronomy and Astrophysics - An Introductory Survey, A lecture series by Prof. G. Srinivasan
-                                <a href="https://youtube.com/playlist?list=PLgg-_kzDkaSFS4JwgDaifTQcYcVSqMBfu&si=Wg1g8XHbMAeGDm8b" class="lqc-link-style">Link</a> <br>
-                                
+
+                            <li>Astronomy and Astrophysics - An Introductory Survey, A lecture series by Prof. G.
+                                Srinivasan
+                                <a href="https://youtube.com/playlist?list=PLgg-_kzDkaSFS4JwgDaifTQcYcVSqMBfu&si=Wg1g8XHbMAeGDm8b"
+                                    class="lqc-link-style">Link</a> <br>
+
                             </li>
-                            
+
                             <li>General Relativity,Prof.Susskind,Stanford
-                                <a href="https://youtube.com/playlist?list=PLpGHT1n4-mAvcXwzOIz3dHnGZaQP1LEib&si=eg_iBA-ByjfHQK52" class="lqc-link-style">Link</a> <br>
-                                
+                                <a href="https://youtube.com/playlist?list=PLpGHT1n4-mAvcXwzOIz3dHnGZaQP1LEib&si=eg_iBA-ByjfHQK52"
+                                    class="lqc-link-style">Link</a> <br>
+
                             </li>
                             <li>General Relativity, MIT
-                                <a href="https://youtube.com/playlist?list=PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx&si=ck4nDNfFRHD5MEdS" class="lqc-link-style">Link</a> <br>
-                                
+                                <a href="https://youtube.com/playlist?list=PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx&si=ck4nDNfFRHD5MEdS"
+                                    class="lqc-link-style">Link</a> <br>
+
                             </li>
                             <li>Quantum Field Theory 1,MIT
-                                <a href="https://youtube.com/playlist?list=PLUl4u3cNGP61AV6bhf4mB3tCyWQrI_uU5&si=7Quo0CvZxjmMiLnD" class="lqc-link-style">Link</a> <br>
-                                
+                                <a href="https://youtube.com/playlist?list=PLUl4u3cNGP61AV6bhf4mB3tCyWQrI_uU5&si=7Quo0CvZxjmMiLnD"
+                                    class="lqc-link-style">Link</a> <br>
+
                             </li>
                             <li>Quantum Field Theory 2,Prof. Sunil Mukhi,IISER Pune
-                                <a href="https://youtube.com/playlist?list=PLYf34mPWoWA03-T4r5NX3MkDpmiFGjsTf&si=ci_7qMGzjROSLA1V" class="lqc-link-style">Link</a> <br>
-                                
+                                <a href="https://youtube.com/playlist?list=PLYf34mPWoWA03-T4r5NX3MkDpmiFGjsTf&si=ci_7qMGzjROSLA1V"
+                                    class="lqc-link-style">Link</a> <br>
+
                             </li>
 
 
                         </ol>
                         <h3 class="mb-0">Extras:</h3>
-                        
-                        
-                       <div class="subheading mb-3"></div>
 
-                        This is not needed compulsorily for theoretical physics but it will be helpful to know this if you are interested in Simulation and Quantum Simulations. This is good add on to the Quantum Simulation: QGSS, IBM that is mentioned above in Quantum Algorithms section and can be great background study before going on to that Summer School playlist. 
-                         <ol class="lqc-ordered-list" type="1" start="30">
+
+                        <div class="subheading mb-3"></div>
+
+                        This is not needed compulsorily for theoretical physics but it will be helpful to know this if
+                        you are interested in Simulation and Quantum Simulations. This is good add on to the Quantum
+                        Simulation: QGSS, IBM that is mentioned above in Quantum Algorithms section and can be great
+                        background study before going on to that Summer School playlist.
+                        <ol class="lqc-ordered-list" type="1" start="30">
                             <li>Computational Chemistry and Classical Molecular Dynamics,Prof. B.L. Tambe, IIT Bombay
-                                <a href="https://youtube.com/playlist?list=PLOzRYVm0a65fCJJQendwEEcSrC8iwvgBn&si=w_s7NLts8J2bCnJw" class="lqc-link-style">Link</a>
+                                <a href="https://youtube.com/playlist?list=PLOzRYVm0a65fCJJQendwEEcSrC8iwvgBn&si=w_s7NLts8J2bCnJw"
+                                    class="lqc-link-style">Link</a>
                             </li>
                             <li>MIT 3.021J Introduction to Modeling and Simulation
-                                <a href="https://youtube.com/playlist?list=PLUl4u3cNGP63eWjy1orBicyAXrunfs2jT&si=40mBClAivw88XibL" class="lqc-link-style">Link</a> <br>
+                                <a href="https://youtube.com/playlist?list=PLUl4u3cNGP63eWjy1orBicyAXrunfs2jT&si=40mBClAivw88XibL"
+                                    class="lqc-link-style">Link</a> <br>
 
                             </li>
                             <li>Density Functional Theory (O.Feia, 2023)
-                                <a href="https://youtube.com/playlist?list=PLSGP3r1iKksNAWMxH-Z25tO-Js1-2zRao&si=XEAodMYnHQ1lIHG-" class="lqc-link-style">Link</a> <br>
+                                <a href="https://youtube.com/playlist?list=PLSGP3r1iKksNAWMxH-Z25tO-Js1-2zRao&si=XEAodMYnHQ1lIHG-"
+                                    class="lqc-link-style">Link</a> <br>
 
                             </li>
                         </ol>
                     </div>
-                </div> 
+                </div>
             </div>
 
         </section>
@@ -851,151 +1034,196 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
             <div class="my-auto">
                 <h2 class="mb-5 headind-bold">General Maths Needed for Graduate Level Theoretical Physics</h2>
 
-                <p>There is not much need to go through all this maths if you are just in Quantum Computing except Quantum Algorithms and Theoretical Physics. Nevertheless It is still good to have at least knowledge until topics that mentioned here until Group Theory. I myself a rookie in pure maths so if there is any mistake  please share your suggestion on the mail given above.
+                <p>There is not much need to go through all this maths if you are just in Quantum Computing except
+                    Quantum Algorithms and Theoretical Physics. Nevertheless It is still good to have at least knowledge
+                    until topics that mentioned here until Group Theory. I myself a rookie in pure maths so if there is
+                    any mistake please share your suggestion on the mail given above.
                 </p>
 
-                
+
 
                 <div class="resume-item d-flex flex-column flex-md-row mb-5">
                     <div class="resume-content mr-auto">
-                        
+
                         <h3 class="mb-0"></h3>
-                        
-                        
+
+
                         <div class="subheading mb-3"></div>
 
                         <ol class="lqc-ordered-list" type="1">
                             <li>Linear Algebra, Prof. Gilbert Strang et al, MIT
-                                <a href="https://youtube.com/playlist?list=PL221E2BBF13BECF6C&si=VPbl8MzvlptDblMP" class="lqc-link-style">Link</a>
+                                <a href="https://youtube.com/playlist?list=PL221E2BBF13BECF6C&si=VPbl8MzvlptDblMP"
+                                    class="lqc-link-style">Link</a>
                             </li>
                             <li> Multivariable Calculus,Dr. S.K. Gupta,IIT Roorkee
-                                <a href="https://youtube.com/playlist?list=PLtKWB-wrvn4nA2h8TFxzWL2zy8O9th_fy&si=FHU_AVJ1-v33fAMh" class="lqc-link-style">Link</a> <br>
-                               
+                                <a href="https://youtube.com/playlist?list=PLtKWB-wrvn4nA2h8TFxzWL2zy8O9th_fy&si=FHU_AVJ1-v33fAMh"
+                                    class="lqc-link-style">Link</a> <br>
+
 
                             </li>
                             <li>ODE and PDE,Prof.P.N.Aggarawal and Prof.D.N. Pandey, IIT Roorkee
-                                <a href="https://youtube.com/playlist?list=PL9m2Lkh6odgKbfY03TFRhwjOqW79UdzK8&si=tWWOfwCvWQFM6okH" class="lqc-link-style">Link</a>
+                                <a href="https://youtube.com/playlist?list=PL9m2Lkh6odgKbfY03TFRhwjOqW79UdzK8&si=tWWOfwCvWQFM6okH"
+                                    class="lqc-link-style">Link</a>
                             </li>
                             <li>Fourier analysis,Prof. G.K. Srinivasan,IIT Bombay
-                                
-                                <a href="https://youtube.com/playlist?list=PLOzRYVm0a65cqD-w8nzPQKzcYM15SwTSH&si=NsnB-GMy-9UIKuMn" class="lqc-link-style">Link</a>
+
+                                <a href="https://youtube.com/playlist?list=PLOzRYVm0a65cqD-w8nzPQKzcYM15SwTSH&si=NsnB-GMy-9UIKuMn"
+                                    class="lqc-link-style">Link</a>
                             </li>
                             <li>Probability and Statistics,Prof. of practice Joe Blitzstein,Harvard
-                                <a href="https://youtube.com/playlist?list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&si=1NMwXDPEK_ih-Ris" class="lqc-link-style">Link</a>
+                                <a href="https://youtube.com/playlist?list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&si=1NMwXDPEK_ih-Ris"
+                                    class="lqc-link-style">Link</a>
                             </li>
                             <li>Calculus of Variations,Dr. Gajendra Purohit
 
-                                <a href="https://youtube.com/playlist?list=PLU6SqdYcYsfLpXwbNhz88mKAckvdWNTNM&si=CFYa_1_VZ-Ju9NEm" class="lqc-link-style">Link</a>
+                                <a href="https://youtube.com/playlist?list=PLU6SqdYcYsfLpXwbNhz88mKAckvdWNTNM&si=CFYa_1_VZ-Ju9NEm"
+                                    class="lqc-link-style">Link</a>
                             </li>
                             <li>Real Analysis,Dr. Jaikrishnan,IIT Palakkad
-                                <a href="https://youtube.com/playlist?list=PL7oBzLzHZ1wX7NQM0Y7QAVt_443nmq2hk&si=22D5YL6vhzsPKI2T" class="lqc-link-style">Link</a>
+                                <a href="https://youtube.com/playlist?list=PL7oBzLzHZ1wX7NQM0Y7QAVt_443nmq2hk&si=22D5YL6vhzsPKI2T"
+                                    class="lqc-link-style">Link</a>
                             </li>
-                            
+
                             <li>Complex Analysis,Dr. P.A.S. Sree Krishna,IIT Guwahati
-                                <a href="https://youtube.com/playlist?list=PLbMVogVj5nJS_i8vfVWJG16mPcoEKMuWT&si=xNtZ4bc159FRa088" class="lqc-link-style">Link</a>
+                                <a href="https://youtube.com/playlist?list=PLbMVogVj5nJS_i8vfVWJG16mPcoEKMuWT&si=xNtZ4bc159FRa088"
+                                    class="lqc-link-style">Link</a>
                             </li>
-                            
+
                             <li>Abstract Group Theory, Prof. Krishna Hanumanthu,CMI (Intro Level)
-                                <a href="https://youtube.com/playlist?list=PLEAYkSg4uSQ1Yhxu2U-BxtRjZElrfVVcO&si=M4cyjYcJdW7iPf61" class="lqc-link-style">Link</a>
+                                <a href="https://youtube.com/playlist?list=PLEAYkSg4uSQ1Yhxu2U-BxtRjZElrfVVcO&si=M4cyjYcJdW7iPf61"
+                                    class="lqc-link-style">Link</a>
                             </li>
                             <li>Topology,Prof. Indrava Roy, IMSc
-                                <a href="https://youtube.com/playlist?list=PLsR86UMNk41IidCx73QZje2DpBN1EQoJ3&si=3-0vKesr3xyxldaf" class="lqc-link-style">Link</a>
+                                <a href="https://youtube.com/playlist?list=PLsR86UMNk41IidCx73QZje2DpBN1EQoJ3&si=3-0vKesr3xyxldaf"
+                                    class="lqc-link-style">Link</a>
                             </li>
                             <li>Representation Theory, Dr. Walter Mazorchuk
-                                <a href="https://youtube.com/playlist?list=PLn6dA-hP_G8TTniGHKpGBqr15PKfN3YJv&si=sqvfCfreNn8aSZT3" class="lqc-link-style">Link</a> <br>
-                                
+                                <a href="https://youtube.com/playlist?list=PLn6dA-hP_G8TTniGHKpGBqr15PKfN3YJv&si=sqvfCfreNn8aSZT3"
+                                    class="lqc-link-style">Link</a> <br>
+
                             </li>
                             <li>Differential Geometry, Harish Seshadri, IISC
-                                <a href="https://youtube.com/playlist?list=PLEAYkSg4uSQ1n29FNt0_VWmGOlnGl-KKE&si=GwvAnsWzoh4rBzuJ" class="lqc-link-style">Link</a> <br>
-                                
+                                <a href="https://youtube.com/playlist?list=PLEAYkSg4uSQ1n29FNt0_VWmGOlnGl-KKE&si=GwvAnsWzoh4rBzuJ"
+                                    class="lqc-link-style">Link</a> <br>
+
                             </li>
                             <li>Differential Geometry(Physics perspective),Prof. Sunil Mukhi, IISER Pune
-                                <a href="https://youtube.com/playlist?list=PLYf34mPWoWA0BgP5FKCb6_ggv8hU3tCf6&si=WkvGvHI4I_1IJQY6" class="lqc-link-style">Link</a> <br>
-                                
+                                <a href="https://youtube.com/playlist?list=PLYf34mPWoWA0BgP5FKCb6_ggv8hU3tCf6&si=WkvGvHI4I_1IJQY6"
+                                    class="lqc-link-style">Link</a> <br>
+
                             </li>
                             <li>Functional Analysis, Dr.Casey Rodriguez, MIT
 
-                                <a href="https://youtube.com/playlist?list=PLUl4u3cNGP63micsJp_--fRAjZXPrQzW_&si=q4iBQsJKhkGuN9JX" class="lqc-link-style">Link</a> <br>
-                                
+                                <a href="https://youtube.com/playlist?list=PLUl4u3cNGP63micsJp_--fRAjZXPrQzW_&si=q4iBQsJKhkGuN9JX"
+                                    class="lqc-link-style">Link</a> <br>
+
                             </li>
                             <li>Lie Algebra,Prof. R Venkatesh,IISC Bangalore.
-                                <a href="https://youtube.com/playlist?list=PLgMDNELGJ1Ca6RP_wDKSH7SwM5DPq1No_&si=X1pC2TabU44j83GE" class="lqc-link-style">Link</a> <br>
+                                <a href="https://youtube.com/playlist?list=PLgMDNELGJ1Ca6RP_wDKSH7SwM5DPq1No_&si=X1pC2TabU44j83GE"
+                                    class="lqc-link-style">Link</a> <br>
 
                             </li>
                             <li>Measure Theory, Prof. Indrava Roy, IMSc
-                                <a href="https://youtube.com/playlist?list=PLyqSpQzTE6M_DZRQxHUafLgeLxZxMpVGS&si=g0g70l-NckPBaXvg" class="lqc-link-style">Link</a> <br>
-                                
+                                <a href="https://youtube.com/playlist?list=PLyqSpQzTE6M_DZRQxHUafLgeLxZxMpVGS&si=g0g70l-NckPBaXvg"
+                                    class="lqc-link-style">Link</a> <br>
+
                             </li>
                             </li>
-                            <li>Random Matrix Theory, Euler Bernhard, IPhT, Saclay (Useful in Quantum Algorithms and Quantum Walks)
-                                <a href="https://youtube.com/playlist?list=PLyHAvCibkccQEFYXdM6r8WG4GQULRKmRA&si=SOkcnWz4r7J3K6v4" class="lqc-link-style">Link</a> <br>
-                                
+                            <li>Random Matrix Theory, Euler Bernhard, IPhT, Saclay (Useful in Quantum Algorithms and
+                                Quantum Walks)
+                                <a href="https://youtube.com/playlist?list=PLyHAvCibkccQEFYXdM6r8WG4GQULRKmRA&si=SOkcnWz4r7J3K6v4"
+                                    class="lqc-link-style">Link</a> <br>
+
                             </li>
-                           
+
                         </ol>
-                     <h3 class="mb-0">Extras:</h3>
-                        
-                        
-                       <div class="subheading mb-3"></div>
+                        <h3 class="mb-0">Extras:</h3>
 
-                        These are some extra maths course not directly needed for theoretical physics but can be helpful for Quantum Cryptography, Quantum Algorithms and Quantum Complexity research.
-                         <ol class="lqc-ordered-list" type="1" start="17">
 
-                             <li>Numerical Analysis (Advanced), Prof. S Baskar, IIT Bombay (It will be helpful for Quantum Algorithms for Differential equations followed by Lie Algebra)
-                                <a href="https://youtube.com/playlist?list=PLOzRYVm0a65d0WWST6wvOP6m7VRQyRgSa&si=_nS8AxWd1z-nz-dh" class="lqc-link-style">Link</a> <br>
+                        <div class="subheading mb-3"></div>
 
-                            </li>
- <li>Applications of Lie Algebra in Differential equations, Dr.Peter J. olver (It will be helpful for Quantum Algorithms for Differential equations using symmetry analysis, you know how to downlaod this)
-                                <a href="https://link.springer.com/book/10.1007/978-1-4612-4350-2"class="lqc-link-style">Link</a> <br>
+                        These are some extra maths course not directly needed for theoretical physics but can be helpful
+                        for Quantum Cryptography, Quantum Algorithms and Quantum Complexity research.
+                        <ol class="lqc-ordered-list" type="1" start="17">
 
-                            </li>
-
-                            <li>Manifold Theory, James cook (It will be helpful for Quantum Algorithms for Differential equations)
-                                <a href="https://youtube.com/playlist?list=PLBY4G2o7DhF31ZBlBqh6wCyjHFebsB34y&si=UQ5_BNsu6E_VNfyv" class="lqc-link-style">Link</a> <br>
+                            <li>Numerical Analysis (Advanced), Prof. S Baskar, IIT Bombay (It will be helpful for
+                                Quantum Algorithms for Differential equations followed by Lie Algebra)
+                                <a href="https://youtube.com/playlist?list=PLOzRYVm0a65d0WWST6wvOP6m7VRQyRgSa&si=_nS8AxWd1z-nz-dh"
+                                    class="lqc-link-style">Link</a> <br>
 
                             </li>
-
-                            
-                            <li>Harmonic Analysis, Boyu Li, University of Waterloo (It will be helpful for Quantum Algorithms for Differential equations but should be done after fourier analysis, group theory and topolgy atleast)
-                                <a href="https://youtube.com/playlist?list=PLaI_L93BctMRnkKznj0jGf_gH9MbtLIem&si=RK3eX01U2CKkyD7r" class="lqc-link-style">Link</a> <br>
+                            <li>Applications of Lie Algebra in Differential equations, Dr.Peter J. olver (It will be
+                                helpful for Quantum Algorithms for Differential equations using symmetry analysis, you
+                                know how to downlaod this)
+                                <a href="https://link.springer.com/book/10.1007/978-1-4612-4350-2"
+                                    class="lqc-link-style">Link</a> <br>
 
                             </li>
 
-                             <li>Introduction to Galois Theory, Prof. Krishna Hanumanthu, CMI (Less necessary at first compare to above ones but it will be helpful for Quantum Algorithms for Differential equations)
-                                <a href="https://youtube.com/playlist?list=PLyqSpQzTE6M94LuHxxu4OrViX4K45oH73&si=awMKB1PJPLUvoHNF" class="lqc-link-style">Link</a> <br>
+                            <li>Manifold Theory, James cook (It will be helpful for Quantum Algorithms for Differential
+                                equations)
+                                <a href="https://youtube.com/playlist?list=PLBY4G2o7DhF31ZBlBqh6wCyjHFebsB34y&si=UQ5_BNsu6E_VNfyv"
+                                    class="lqc-link-style">Link</a> <br>
 
                             </li>
 
-                            <li>Stochastic Calculus, Prof. Joydeep Dutta et al. (It will be helpful prerequisite for Quantum Algorithms for Finance)
-                                <a href="https://youtube.com/playlist?list=PLckXXkZv3lYhTgR-3Pxc5kvUMR8sbS074&si=rkKqORzBOPPURs3J" class="lqc-link-style">Link</a> <br>
+
+                            <li>Harmonic Analysis, Boyu Li, University of Waterloo (It will be helpful for Quantum
+                                Algorithms for Differential equations but should be done after fourier analysis, group
+                                theory and topolgy atleast)
+                                <a href="https://youtube.com/playlist?list=PLaI_L93BctMRnkKznj0jGf_gH9MbtLIem&si=RK3eX01U2CKkyD7r"
+                                    class="lqc-link-style">Link</a> <br>
 
                             </li>
-                             
-                            <li>Number Theory, Michael Penn (It will be helpful prerequisite for Post-Quantum Cryptography)
-                                <a href="https://youtube.com/playlist?list=PL22w63XsKjqwAgBzVFVqZNMcVKpOOAA7c&si=zyUbJMcJ3QmB7_7t" class="lqc-link-style">Link</a>
-                            </li>
-                            <li>Operations Research, Prof. Kusum Deep, IIT Roorkee (It will be helpful prerequisite for Quantum Algorithms for Optimization)
-                                <a href="https://youtube.com/playlist?list=PLLy_2iUCG87Bq8RGMTdeFZiB-87V4i9p1&si=TPnCtm1VzET3Uo3h" class="lqc-link-style">Link</a> <br>
+
+                            <li>Introduction to Galois Theory, Prof. Krishna Hanumanthu, CMI (Less necessary at first
+                                compare to above ones but it will be helpful for Quantum Algorithms for Differential
+                                equations)
+                                <a href="https://youtube.com/playlist?list=PLyqSpQzTE6M94LuHxxu4OrViX4K45oH73&si=awMKB1PJPLUvoHNF"
+                                    class="lqc-link-style">Link</a> <br>
 
                             </li>
-                            <li>Introduction to Combinatorics, Prof.N Narayanan, IIT Madras (It will be helpful prerequisite for Quantum Complexity Theory and analysis of Quantum Algorithms)
-                                <a href="https://youtube.com/playlist?list=PLEAYkSg4uSQ0ZqCkdrqWP-gy8J7f7E6HD&si=4hruM6MkuvHSJxJB" class="lqc-link-style">Link</a> <br>
+
+                            <li>Stochastic Calculus, Prof. Joydeep Dutta et al. (It will be helpful prerequisite for
+                                Quantum Algorithms for Finance)
+                                <a href="https://youtube.com/playlist?list=PLckXXkZv3lYhTgR-3Pxc5kvUMR8sbS074&si=rkKqORzBOPPURs3J"
+                                    class="lqc-link-style">Link</a> <br>
 
                             </li>
-                            <li>Game Theory, Prof. K.S. Mallikarjuna, IIT Bombay (It will be helpful prerequisite for analysis of Algorithms)
-                                <a href="https://youtube.com/playlist?list=PLOzRYVm0a65fY-Vh8Caiv3wAYmDd7SnrN&si=CI_qNFUPIdLqdpAP" class="lqc-link-style">Link</a> <br>
+
+                            <li>Number Theory, Michael Penn (It will be helpful prerequisite for Post-Quantum
+                                Cryptography)
+                                <a href="https://youtube.com/playlist?list=PL22w63XsKjqwAgBzVFVqZNMcVKpOOAA7c&si=zyUbJMcJ3QmB7_7t"
+                                    class="lqc-link-style">Link</a>
+                            </li>
+                            <li>Operations Research, Prof. Kusum Deep, IIT Roorkee (It will be helpful prerequisite for
+                                Quantum Algorithms for Optimization)
+                                <a href="https://youtube.com/playlist?list=PLLy_2iUCG87Bq8RGMTdeFZiB-87V4i9p1&si=TPnCtm1VzET3Uo3h"
+                                    class="lqc-link-style">Link</a> <br>
+
+                            </li>
+                            <li>Introduction to Combinatorics, Prof.N Narayanan, IIT Madras (It will be helpful
+                                prerequisite for Quantum Complexity Theory and analysis of Quantum Algorithms)
+                                <a href="https://youtube.com/playlist?list=PLEAYkSg4uSQ0ZqCkdrqWP-gy8J7f7E6HD&si=4hruM6MkuvHSJxJB"
+                                    class="lqc-link-style">Link</a> <br>
+
+                            </li>
+                            <li>Game Theory, Prof. K.S. Mallikarjuna, IIT Bombay (It will be helpful prerequisite for
+                                analysis of Algorithms)
+                                <a href="https://youtube.com/playlist?list=PLOzRYVm0a65fY-Vh8Caiv3wAYmDd7SnrN&si=CI_qNFUPIdLqdpAP"
+                                    class="lqc-link-style">Link</a> <br>
 
                             </li>
                         </ol>
                     </div>
-                </div> 
+                </div>
             </div>
 
         </section>
 
-        
 
-    
+
+
 
         <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
             <div class="my-auto">
@@ -1003,19 +1231,29 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
 
                 <div class="resume-item d-flex flex-column flex-md-row mb-5">
                     <div class="resume-content mr-auto">
-                        
+
 
                     </div>
 
                 </div>
-<p>I want to thank first of all <a href="https://www.linkedin.com/in/naman-jeet-yadav-0465b31a3/">Naman</a> for making this wonderful idea into reality. I want to thank  <a href="https://www.linkedin.com/in/yashovardhan-jha/">Yashovardhan</a>, <a href="https://www.linkedin.com/in/naimishsharma/">Naimish</a> ,<a href="https://linkedin.com/in/shubham-kumar-56a0501b6/">Shubham Kumar</a>, <a href="https://www.linkedin.com/in/shubham-chouhan-0531992a7/">Shubham Chouhan</a>,Rupayan for engaging in discussions on topics from physics to philosophy. The crux of those fruitful discussions is this page. <br>
-    I hope this list will be useful to inspire someone around the world, sitting on the desk with his/her laptop wondering how he/she can solve the deepest questions this universe poses using Quantum Computing and beyond!!
-    <br>
-    <br>
-    Best of luck <br>
-    -By a physics student curiously lost in the field Quantum Computing.
-    
-</p>
+                <p>I want to thank first of all <a
+                        href="https://www.linkedin.com/in/naman-jeet-yadav-0465b31a3/">Naman Jeet Yadav</a> for making this
+                    wonderful idea into reality. I want to thank <a
+                        href="https://www.linkedin.com/in/yashovardhan-jha/">Yashovardhan</a>, <a
+                        href="https://www.linkedin.com/in/naimishsharma/">Naimish</a> ,<a
+                        href="https://linkedin.com/in/shubham-kumar-56a0501b6/">Shubham Kumar</a>, <a
+                        href="https://www.linkedin.com/in/shubham-chouhan-0531992a7/">Shubham Chouhan</a>,Rupayan for
+                    engaging in discussions on topics from physics to philosophy. The crux of those fruitful discussions
+                    is this page. <br>
+                    I hope this list will be useful to inspire someone around the world, sitting on the desk with
+                    his/her laptop wondering how he/she can solve the deepest questions this universe poses using
+                    Quantum Computing and beyond!!
+                    <br>
+                    <br>
+                    Best of luck <br>
+                    -By a physics student curiously lost in the field Quantum Computing.
+
+                </p>
 
             </div>
 
@@ -1025,7 +1263,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
 
 
 
-     
+
     </div>
 
     <!-- Bootstrap core JavaScript -->

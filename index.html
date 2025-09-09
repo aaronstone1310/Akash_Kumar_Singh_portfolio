@@ -40,6 +40,161 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
 
 
 
+  <style>
+    /* Home page carousel image tweaks */
+    #galleryCarousel .carousel-item img {
+      width: 50% !important;
+      /* smaller than before */
+      /* max-height: 380px; */
+      height: 300px;
+      /* reduce height a bit more */
+      object-fit: contain;
+      display: block;
+      margin: 0 auto;
+      /* center the image */
+      border: 4px solid rgba(255, 255, 255, 0.9);
+      /* clean light border */
+      background-color: #f8f9fa;
+      /* subtle background behind transparent areas */
+      border-radius: 8px;
+      /* modern rounded corners */
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+      /* professional soft shadow */
+    }
+
+    /* Subtle homepage grooming */
+    body {
+      background-color: #fafbfc;
+    }
+
+    #about .my-auto {
+      background: #ffffff;
+      border: 1px solid #eef0f3;
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 8px 22px rgba(9, 30, 66, 0.06);
+    }
+
+    h1 {
+      letter-spacing: 0.3px;
+    }
+
+    .subheading a {
+      color: #0d6efd;
+      text-decoration: none;
+    }
+
+    .subheading a:hover {
+      text-decoration: underline;
+    }
+
+    .top-upper-para {
+      line-height: 1.8;
+      color: #39424e;
+    }
+
+    .headind-bold {
+      color: #2b2f33;
+      border-left: 4px solid #0b3d91;
+      padding-left: 10px;
+    }
+
+    .resume-item {
+      background: #ffffff;
+      border: 1px solid #eef0f3;
+      border-radius: 10px;
+      padding: 16px;
+      box-shadow: 0 6px 16px rgba(9, 30, 66, 0.05);
+    }
+
+    .resume-date .text-primary {
+      color: #0b3d91 !important;
+    }
+
+    .relevant-course-list {
+      columns: 2;
+      -webkit-columns: 2;
+      -moz-columns: 2;
+      column-gap: 32px;
+      padding-left: 18px;
+    }
+
+    .relevant-course-list li {
+      margin-bottom: 6px;
+    }
+
+    /* Carousel spacing tweak */
+    #galleryCarousel {
+      border: 1px solid #eef0f3;
+      border-radius: 12px;
+      background: #fff;
+      box-shadow: 0 8px 22px rgba(9, 30, 66, 0.06);
+      padding: 12px;
+    }
+
+    /* Compact, scoped styles for Certifications & Awards on index only */
+    .certifications-section .resume-item {
+      padding: 10px;
+      margin-bottom: 0.75rem !important;
+    }
+
+    .certifications-section h3.mb-0 {
+      font-size: 1rem;
+      line-height: 1.3;
+      margin-bottom: 0.15rem;
+    }
+
+    .certifications-section .subheading {
+      font-size: 0.9rem;
+      margin-bottom: 0.15rem;
+    }
+
+    .certifications-section .resume-date .change-fontsize {
+      font-size: 0.88rem;
+    }
+
+    /* Coursework cards */
+    .coursework-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .course-card {
+      background: #ffffff;
+      border: 1px solid #eef0f3;
+      border-radius: 10px;
+      padding: 14px 16px;
+      box-shadow: 0 6px 16px rgba(9, 30, 66, 0.05);
+      transition: box-shadow 0.2s ease, transform 0.2s ease;
+    }
+
+    .course-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 22px rgba(9, 30, 66, 0.08);
+    }
+
+    .course-title {
+      font-weight: 600;
+      color: #2b2f33;
+      letter-spacing: 0.2px;
+    }
+
+    @media (max-width: 992px) {
+      .coursework-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 576px) {
+      .coursework-grid {
+        grid-template-columns: 1fr;
+      }
+      .course-card {
+        padding: 12px 14px;
+      }
+    }
+  </style>
 </head>
 
 <body id="page-top">
@@ -59,12 +214,22 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
       <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="index.html">Home</a>
-      </li>
+        </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#">Publications</a>
+          <a class="nav-link js-scroll-trigger" href="publications.html">Publications</a>
         </li>
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="learn-quantum.html">Learn Quantum Computing</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="research.html">Research</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="awards.html">Awards</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="gallery.html">Gallery</a>
         </li>
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#">Blogs</a>
@@ -73,7 +238,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
           <a class="nav-link js-scroll-trigger" id="download-cv" href="Akash_Kumar_Singh_Resume.pdf">Download CV</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#">Contact</a>
+          <a class="nav-link js-scroll-trigger" href="contact.html">Contact</a>
         </li>
 
       </ul>
@@ -85,7 +250,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
       <div class="my-auto">
         <h1 class="mb-0">Akash Kumar
-          <span class="text-primary">Singh</span> 
+          <span class="text-primary">Singh</span>
         </h1>
         <div class="subheading mb-5">
           <!-- 3542 Berry Street · Cheyenne Wells, CO 80810 · (317) 585-8468 · -->
@@ -94,16 +259,117 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
           <a href="mailto:akashkumar@students.iisertirupati.ac.in">akashkumar@students.iisertirupati.ac.in</a>.</p>
 
         </div>
-        <p class="mb-5 top-upper-para">I am Akash Kumar Singh, a dedicated researcher in the field of quantum computing.
+
+        <!-- Auto-sliding gallery carousel (2s) -->
+        <div id="galleryCarousel" class="carousel slide mb-5" data-ride="carousel" data-interval="2000">
+          <ol class="carousel-indicators">
+            <li data-target="#galleryCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#galleryCarousel" data-slide-to="1"></li>
+            <li data-target="#galleryCarousel" data-slide-to="2"></li>
+            <li data-target="#galleryCarousel" data-slide-to="3"></li>
+            <li data-target="#galleryCarousel" data-slide-to="4"></li>
+            <li data-target="#galleryCarousel" data-slide-to="5"></li>
+            <li data-target="#galleryCarousel" data-slide-to="6"></li>
+            <li data-target="#galleryCarousel" data-slide-to="7"></li>
+            <li data-target="#galleryCarousel" data-slide-to="8"></li>
+            <li data-target="#galleryCarousel" data-slide-to="9"></li>
+            <li data-target="#galleryCarousel" data-slide-to="10"></li>
+            <li data-target="#galleryCarousel" data-slide-to="11"></li>
+            <li data-target="#galleryCarousel" data-slide-to="12"></li>
+            <li data-target="#galleryCarousel" data-slide-to="13"></li>
+            <li data-target="#galleryCarousel" data-slide-to="14"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="img/gallery-img/3,1correction2.png" alt="slide 1"
+                style="max-height:500px; object-fit:contain;">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/gallery-img/3,1correction3.png" alt="slide 2"
+                style="max-height:500px; object-fit:contain;">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/gallery-img/3,1correction4.png" alt="slide 3"
+                style="max-height:500px; object-fit:contain;">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/gallery-img/Block Encoding.PNG" alt="slide 4"
+                style="max-height:500px; object-fit:contain;">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/gallery-img/Circuit for QLT.png" alt="slide 5"
+                style="max-height:500px; object-fit:contain;">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/gallery-img/Complex weight LCU.png" alt="slide 6"
+                style="max-height:500px; object-fit:contain;">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/gallery-img/Exponential.png" alt="slide 7"
+                style="max-height:500px; object-fit:contain;">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/gallery-img/Further Reduction in select gate.png" alt="slide 8"
+                style="max-height:500px; object-fit:contain;">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/gallery-img/Lap-lchs circuit.png" alt="slide 9"
+                style="max-height:500px; object-fit:contain;">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/gallery-img/LCU.PNG" alt="slide 10"
+                style="max-height:500px; object-fit:contain;">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/gallery-img/QLT CIRCUIT PENNYLANE.png" alt="slide 11"
+                style="max-height:500px; object-fit:contain;">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/gallery-img/Real weight LCU.png" alt="slide 12"
+                style="max-height:500px; object-fit:contain;">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/gallery-img/sin.PNG" alt="slide 13"
+                style="max-height:500px; object-fit:contain;">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/gallery-img/Single qubit QLT.png" alt="slide 14"
+                style="max-height:500px; object-fit:contain;">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/gallery-img/Sinh.png" alt="slide 15"
+                style="max-height:500px; object-fit:contain;">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#galleryCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#galleryCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <p class="mb-5 top-upper-para">
+        <p>I am Akash Kumar Singh, a dedicated researcher in the field of quantum computing.
           I graduated with a BS-MS in Physics from the Indian Institute of Science Education and Research (IISER),
           Tirupati, India, in 2023. During my undergraduate studies, I focused on Quantum Error Correction, specifically
           designing a scheme to implement CSS codes on Measurement-Based Quantum Computation (MBQC) using ZX Calculus.
-          <br>
+        </p>
+        <!-- <br> -->
 
-          Currently, I am pursuing an M.Tech in Quantum Computing at the Defence Institute of Advanced Technology, Pune.<span class="highlight-text"> 
-          My research interests include developing quantum algorithms for linear algebra, differential equations, and optimization. Currently, I am focused on Quantum Algorithms for Differential Equations as part of my M.Tech Dissertation.</span> 
-          I aim to leverage my expertise in Quantum Error Correction and ZX Calculus to design more
-          efficient algorithms for quantum computation.
+        <p>After that, I pursued an M.Tech in Quantum Computing at the Defence Institute of Advanced Technology, Pune.
+          My
+          research interests include developing quantum algorithms for differential equations and linear algebra. In my
+          M.Tech, I focused on Quantum Algorithms for Differential Equations as part of my dissertation. I was able to
+          design an efficient algorithm for the Quantum Laplace Transform, which achieved superpolynomial speedup over
+          classical methods.</p>
+        <!-- <br> -->
+        <p>Currently, I am working as a Project Engineer at C-DAC CINE, where I focus on quantum algorithms for ordinary
+          and partial differential equations. I aim to leverage my expertise in Quantum Error Correction and ZX Calculus
+          to design more efficient algorithms for quantum computation. Recently, I have also developed an interest in
+          Quantum Learning Theory and would like to pursue a PhD in this domain with a strong theoretical focus.
+        </p>
         </p>
         <ul class="list-inline list-social-icons mb-0">
           <li class="list-inline-item">
@@ -114,14 +380,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
               </span>
             </a>
           </li>
-          <!-- <li class="list-inline-item">
-            <a href="#">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-          </li> -->
+
           <li class="list-inline-item">
             <a href="https://x.com/TheAkashKSingh">
               <span class="fa-stack fa-lg">
@@ -149,8 +408,11 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
 
         <div class="resume-item d-flex flex-column flex-md-row mb-5">
           <div class="resume-content mr-auto">
-            <h3 class="mb-0">Indian Institute of Science Education and Research (IISER), Tirupati</h3>
-            <div class="subheading mb-3">BS-MS in Physics</div>
+            <h3 class="mb-0">Defence Institute of Advanced Technology, Pune</h3>
+            <div class="subheading mb-3">M.Tech in Quantum Computing</div>
+            <div class="subheading mb-3">CGPA: 8.40/10. Thesis: Quantum Algorithms for Differential Equations using
+              spectral methods. Awarded AICTE GATE Scholarship. Organized Qiskit FallFest 2023.</div>
+
             <!-- <h3 class="mb-0">Indian Institute of Science Education and Research (IISER), Tirupati</h3>
             <div class="subheading mb-3">BS-MS in Physics</div> -->
 
@@ -158,8 +420,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
 
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary change-fontsize">Aug. 2018 – Aug 2023
-              <div>Tirupati, Andhra Pradesh</div>
+            <span class="text-primary change-fontsize">Aug 2023 – Jun 2025
+              <!-- <div>Tirupati, Andhra Pradesh</div> -->
             </span>
 
           </div>
@@ -168,14 +430,17 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
 
         <div class="resume-item d-flex flex-column flex-md-row mb-5">
           <div class="resume-content mr-auto">
-            <h3 class="mb-0">Defence Institute of Advanced Technology,Pune</h3>
-            <div class="subheading mb-3">M.Tech in Quantum Computing</div>
-            <!-- <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the
-              digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information
-              highway will close the loop on focusing solely on the bottom line.</p> -->
+            <h3 class="mb-0">Indian Institute of Science Education and Research, Tirupati
+            </h3>
+            <div class="subheading mb-3">BS-MS in Physics</div>
+            <div class="subheading mb-3">Specialization in Physics. Thesis: Implementing CSS codes on MBQC using
+              ZX-Calculus.
+
+            </div>
+
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary change-fontsize ">Aug. 2023 – Present
+            <span class="text-primary change-fontsize ">Aug 2018 – Aug 2023
               <div>Pune,Maharashtra</div>
             </span>
           </div>
@@ -191,24 +456,24 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
       <div class="my-auto">
         <h2 class="mb-5 headind-bold">Relevant Coursework</h2>
 
-        <ul class="relevant-course-list">
-          <li>Quantum Mechanics 1 and 2</li>
-          <li>Quantum Information</li>
-          <li>Quantum Computing</li>
-          <li>Optics and Photonics</li>
-          <li>Digital system design using FPGA</li>
-          <li>Linear Algebra</li>
-          <li>Statistical Thermodynamics</li>
-          <li>Electrodynamics</li>
-          <li>Probability and Statistics</li>
-          <li>Structures of Mathematics</li>
-          <li>Data Science 1 and 2</li>
-          <li>Operations Research</li>
-          <li>Discrete Mathematics</li>
-          <li>Advance Quantum Communication</li>
-          <li>Nonlinear optics</li>
-          <li>Quantum Metrology and Sensing.</li>
-        </ul>
+        <div class="coursework-grid">
+          <div class="course-card"><div class="course-title">Quantum Mechanics I &amp; II</div></div>
+          <div class="course-card"><div class="course-title">Quantum Information</div></div>
+          <div class="course-card"><div class="course-title">Quantum Computing</div></div>
+          <div class="course-card"><div class="course-title">Optics and Photonics</div></div>
+          <div class="course-card"><div class="course-title">Digital System Design using FPGA</div></div>
+          <div class="course-card"><div class="course-title">Linear Algebra</div></div>
+          <div class="course-card"><div class="course-title">Statistical Thermodynamics</div></div>
+          <div class="course-card"><div class="course-title">Electrodynamics</div></div>
+          <div class="course-card"><div class="course-title">Probability and Statistics</div></div>
+          <div class="course-card"><div class="course-title">Structures of Mathematics</div></div>
+          <div class="course-card"><div class="course-title">Data Science I &amp; II</div></div>
+          <div class="course-card"><div class="course-title">Operations Research</div></div>
+          <div class="course-card"><div class="course-title">Discrete Mathematics</div></div>
+          <div class="course-card"><div class="course-title">Advanced Quantum Communication</div></div>
+          <div class="course-card"><div class="course-title">Nonlinear Optics</div></div>
+          <div class="course-card"><div class="course-title">Quantum Metrology and Sensing</div></div>
+        </div>
 
 
 
@@ -221,40 +486,92 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
 
         <div class="resume-item d-flex flex-column flex-md-row mb-5">
           <div class="resume-content mr-auto">
-            <h3 class="mb-0">MS Thesis at IISER Bhopal</h3>
-            <div class="subheading mb-3">-Supervised by Dr.Ankur Raina,Electrical Engineering and Computer Science,
-              IISER Bhopal
-              <ul>
-                <li>• Encoder for CSS codes using Measurement Based Quantum Computing(Used ZX-Calculus)</li>
-              </ul>
+            <h3 class="mb-0">Project Engineer</h3>
+            <div class="subheading mb-3">C-DAC CINE, Guwahati
+              <br>
+              <div>Working on Quantum Algorithms and Simulations.</div>
+
             </div>
-            <!-- <h3 class="mb-0">Indian Institute of Science Education and Research (IISER), Tirupati</h3>
-            <div class="subheading mb-3">BS-MS in Physics</div> -->
-
-
 
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary change-fontsize">May 2022 - June 2023</span>
+            <span class="text-primary change-fontsize">Jul 2025 – Present</span>
 
           </div>
 
         </div>
 
+
+
         <div class="resume-item d-flex flex-column flex-md-row mb-5">
           <div class="resume-content mr-auto">
-            <h3 class="mb-0">Quantum Computing India(QCI)</h3>
-            <div class="subheading mb-3">Quantum Hardware Learning Circle
-              <ul>
-                <li>Developed a understanding of different Quantum Hardware approaches and about Qiskit Metal.</li>
-              </ul>
+            <h3 class="mb-0">Junior Quantum Algorithm Developer (Internship)</h3>
+            <div class="subheading mb-3">QClairvoyance Quantum Labs
+              <br>
+              <div>Developed quantum algorithms for PDEs with applications in drug discovery. Created Quantum Laplace
+                Transform algorithm using Quantum Eigenvalue Transformation, implemented on Pennylane.</div>
             </div>
-            <!-- <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the
-              digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information
-              highway will close the loop on focusing solely on the bottom line.</p> -->
+            <!-- <h3 class="mb-0">Indian Institute of Science Education and Research (IISER), Tirupati</h3>
+            <div class="subheading mb-3">BS-MS in Physics</div> -->
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary change-fontsize">May 2021 - Aug 2021</span>
+            <span class="text-primary change-fontsize">Jan 2025 – Jun 2025</span>
+
+          </div>
+
+        </div>
+
+
+
+
+        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0">MS Thesis Student</h3>
+            <div class="subheading mb-3">IISER Bhopal
+              <div>Worked on Quantum Error Correction for MBQC under Dr. Ankur Raina. Developed a scheme for CSS codes
+                using ZX-Calculus.</div>
+            </div>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary change-fontsize">Jun 2022 – Jul 2023</span>
+
+          </div>
+
+        </div>
+
+
+
+
+        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0">Summer Intern</h3>
+            <div class="subheading mb-3">NISER, Bhubaneswar
+              <div>Studied continuous-time quantum walks under Dr. Colin Benjamin.</div>
+            </div>
+
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary change-fontsize">Jun 2021 – Aug 2021</span>
+
+          </div>
+
+        </div>
+
+
+
+
+
+
+        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0">IBM Qiskit Global Summer School 2021</h3>
+            <div class="subheading mb-3">Quantum Machine Learning
+              <div>Completed IBM’s QML program and received Certificate of Quantum Excellence.</div>
+            </div>
+
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary change-fontsize">Jul 2021 – Aug 2021</span>
           </div>
         </div>
 
@@ -275,13 +592,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
               <!-- -Supervised by Dr.Ankur Raina,Electrical Engineering and Computer Science,
               IISER Bhopal -->
               <ul>
-                <li>Worked on Quantum N-queen solver using Qiskit for fulfillment of Term paper requirement for
-                  Quantum Mechanics 2
-                  course.</li>
-                <li> Understood the concept behind the N-Queen problem and how Quantum computing can help to solve it
-                  faster with less
-                  time and resource complexity</li>
-                <li>Implemented it on Qiskit for a 4x4 case.</li>
+                <li>Developed a Quantum N-Queen solver using Qiskit as part of coursework.</li>
+                <li> Implemented solution for 4x4 case demonstrating quantum speedup potential.</li>
+                <!-- <li>Implemented it on Qiskit for a 4x4 case.</li> -->
               </ul>
             </div>
             <!-- <h3 class="mb-0">Indian Institute of Science Education and Research (IISER), Tirupati</h3>
@@ -291,7 +604,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
 
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary change-fontsize">May 2022 - June 2023</span>
+            <span class="text-primary change-fontsize">2022</span>
 
           </div>
 
@@ -303,14 +616,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
             <div class="subheading mb-3">
               <!-- Quantum Hardware Learning Circle -->
               <ul>
-                <li>The aim of the project was to discuss a formalism that can make use of power of Universal Quantum
-                  Computers to
-                  simulate and solve classical non linear dynamics problem. This was done as a fulfillment of term paper
-                  requirement for
-                  Non-Linear Dynamics Course.</li>
-                <li>The method of an arbitrary classical dynamical system extension to the quantum system was developed
-                  with example of
-                  Logistic Model.</li>
+                <li>Explored quantum formalism to simulate classical non-linear dynamics.</li>
+                <li>Extended classical dynamical systems to quantum, using Logistic Model as example.
+                </li>
               </ul>
             </div>
             <!-- <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the
@@ -329,31 +637,92 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     </section>
 
 
-    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column certifications-section" id="experience">
       <div class="my-auto">
-        <h2 class="mb-5 headind-bold">Certifications</h2>
+        <h2 class="mb-5 headind-bold">Certifications & Awards</h2>
 
         <div class="resume-item d-flex flex-column flex-md-row mb-5">
           <div class="resume-content mr-auto">
-            <h3 class="mb-0">QKRISHI X IISER Tirupati: Course on Quantum Computing</h3>
+            <h3 class="mb-0">Qualified IISER Aptitude Test 2018 – Pursued BS-MS at IISER Tirupati.</h3>
             <div class="subheading mb-3">
-              <!-- BS-MS in Physics -->
             </div>
-
-
-
-
           </div>
           <div class="resume-date text-md-right">
             <span class="text-primary change-fontsize">May 2022 - July 2022</span>
-
           </div>
-
         </div>
 
         <div class="resume-item d-flex flex-column flex-md-row mb-5">
           <div class="resume-content mr-auto">
-            <h3 class="mb-0">iQuHack 2022 : participated in annual Hackathon organized by iQuise,MIT</h3>
+            <h3 class="mb-0">Qualified GATE Physics 2023 & 2024 – Awarded AICTE Scholarship for M.Tech at DIAT Pune.
+            </h3>
+            <div class="subheading mb-3">
+            </div>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary change-fontsize">May 2022 - July 2022</span>
+          </div>
+        </div>
+
+
+        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0">Secured highest marks in India in the Quantum Computing exam conducted by C-DAC for
+              Scientist 'B' (2025).
+            </h3>
+            <div class="subheading mb-3">
+            </div>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary change-fontsize">May 2022 - July 2022</span>
+          </div>
+        </div>
+
+
+
+        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0">Washington Institute for STEM (2025) – Quantum Program + Modules (PDEs, Nonlinear Problems)
+            </h3>
+            <div class="subheading mb-3">
+            </div>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary change-fontsize">May 2022 - July 2022</span>
+          </div>
+        </div>
+
+
+        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0">PennyLane Challenges (2025) – LCU & Trotterization Challenges
+            </h3>
+            <div class="subheading mb-3">
+            </div>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary change-fontsize">May 2022 - July 2022</span>
+          </div>
+        </div>
+
+
+        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0">IMSc Chennai (2025) – Foundational Lecture Series on Theoretical Computer Science
+            </h3>
+            <div class="subheading mb-3">
+            </div>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary change-fontsize">May 2022 - July 2022</span>
+          </div>
+        </div>
+
+
+        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0">C-DAC Pune (2024) – International Workshop on Quantum Communication & Computing
+            </h3>
             <div class="subheading mb-3">
               <!-- M.Tech in Quantum Computing -->
             </div>
@@ -366,15 +735,16 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
 
         <div class="resume-item d-flex flex-column flex-md-row mb-5">
           <div class="resume-content mr-auto">
-            <h3 class="mb-0">Qubit X Qubit: Introduction to Quantum Computing Course sponsored by IBM</h3>
+            <h3 class="mb-0">QWorld QIntern 2023 – Diploma + Best Project & Best Presentation Awards
+            </h3>
             <div class="subheading mb-3">
-              <ul type="star">
+              <!-- <ul type="star">
                 <li>
 
                   Developed a foundational understanding of Quantum Computing with topics including Introductory Linear
                   Algebra,coding with Qiskit, Quantum Mechanics, Quantum Algorithms and applications.
                 </li>
-              </ul>
+              </ul> -->
             </div>
 
           </div>
@@ -386,14 +756,15 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
 
         <div class="resume-item d-flex flex-column flex-md-row mb-5">
           <div class="resume-content mr-auto">
-            <h3 class="mb-0">Qworld Challenge: Global Quantum Programming Workshop 2020</h3>
+            <h3 class="mb-0">IBM Qiskit Global Summer School 2021 – Quantum Machine Learning, Certificate of Excellence
+            </h3>
             <div class="subheading mb-3">
-              <ul type="star">
+              <!-- <ul type="star">
                 <li>
 
                   Completed Programming excercises in Qiskit using Qworld Introductory Tutorial Bronze.
                 </li>
-              </ul>
+              </ul> -->
             </div>
 
           </div>
@@ -406,17 +777,10 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
 
         <div class="resume-item d-flex flex-column flex-md-row mb-5">
           <div class="resume-content mr-auto">
-            <h3 class="mb-0">Quantum winter Hackathon 2020 organized by BosonQ Psi and Quantum Computing India</h3>
+            <h3 class="mb-0">QKrishi x IISER Tirupati – Quantum Computing Course (2022)
+            </h3>
             <div class="subheading mb-3">
-              <ul type="star">
-                <li>
-
-                  Understood concepts of Computational fluid Dynamics and advantages of Quantum Computing to solve such
-                  problems.
-                </li>
-              </ul>
             </div>
-
           </div>
           <div class="resume-date text-md-right">
             <span class="text-primary change-fontsize">Dec 2020</span>
@@ -426,7 +790,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
 
         <div class="resume-item d-flex flex-column flex-md-row mb-5">
           <div class="resume-content mr-auto">
-            <h3 class="mb-0">Qiskit Global Summer School 2020 : Certificate of Quantum Excellence</h3>
+            <h3 class="mb-0">iQuHack (MIT) – Hackathon (2022)
+            </h3>
             <div class="subheading mb-3">
 
             </div>
@@ -436,6 +801,69 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
             <span class="text-primary change-fontsize">July 2020 - Aug 2020</span>
           </div>
         </div>
+
+
+
+
+        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0">Qubit x Qubit Intro to Quantum Computing (2020–21)
+
+            </h3>
+            <div class="subheading mb-3">
+            </div>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary change-fontsize">Dec 2020</span>
+          </div>
+        </div>
+
+
+
+        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0">QWorld Challenge 2020 – Global Quantum Programming Workshop
+
+            </h3>
+            <div class="subheading mb-3">
+            </div>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary change-fontsize">Dec 2020</span>
+          </div>
+        </div>
+
+
+
+        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0">Quantum Winter Hackathon 2020 – BosonQ Psi & QCI
+
+            </h3>
+            <div class="subheading mb-3">
+            </div>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary change-fontsize">Dec 2020</span>
+          </div>
+        </div>
+
+
+
+        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0">Qiskit Global Summer School 2020 – Certificate of Quantum Excellence
+            </h3>
+            <div class="subheading mb-3">
+            </div>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary change-fontsize">Dec 2020</span>
+          </div>
+        </div>
+
+
+
 
 
 
@@ -486,11 +914,19 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         <ul class="fa-ul mb-0">
           <li>
             <i class="fa-li fa fa-check"></i>
-            Languages: Python,Fortran,Java,HTML,Latex
+            Programming: Python, Fortran, Java, HTML, LaTeX
           </li>
           <li>
             <i class="fa-li fa fa-check"></i>
-            Technologies/Frameworks: Qiskit,Github
+            Quantum Tools: Qiskit, Pennylane, ZX-Calculus
+          </li>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Domains: Quantum Algorithms, Quantum Simulation, Theoretical Computer Science
+          </li>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Other: Git/GitHub
           </li>
 
         </ul>
@@ -505,12 +941,14 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
 
         <div class="resume-item d-flex flex-column flex-md-row mb-5">
           <div class="resume-content mr-auto">
-            <h3 class="mb-0">QSoD-The Quantum Computing Society of DIAT,Pune</h3>
+            <h3 class="mb-0"> QSoD, Quantum Computing Society of DIAT Pune
+
+
+            </h3>
             <div class="subheading mb-3">Founding Member</div>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary change-fontsize">Sept 2023 – Present
-
+            <span class="text-primary change-fontsize">(2023–Present)
               <div>DIAT,Pune</div>
             </span>
           </div>
@@ -518,12 +956,12 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
 
         <div class="resume-item d-flex flex-column flex-md-row mb-5">
           <div class="resume-content mr-auto">
-            <h3 class="mb-0">QUIISER-The Quantum Computing and Information Club of IISER Tirupati</h3>
+            <h3 class="mb-0">QUIISER, Quantum Computing Club of IISER Tirupati</h3>
             <div class="subheading mb-3">Co-Founder</div>
 
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary change-fontsize">Jan 2021 – June 2023
+            <span class="text-primary change-fontsize">(2021–2023)
               <div>IISER Tirupati</div>
             </span>
           </div>
@@ -531,12 +969,12 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
 
         <div class="resume-item d-flex flex-column flex-md-row mb-5">
           <div class="resume-content mr-auto">
-            <h3 class="mb-0">Institute Innovation Council(IIC)</h3>
+            <h3 class="mb-0">Institute Innovation Council, IISER Tirupati </h3>
             <div class="subheading mb-3">Core Member</div>
 
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary change-fontsize">Aug 2020 – January 2022
+            <span class="text-primary change-fontsize">(2020–2022)
               <div>IISER Tirupati</div>
             </span>
           </div>
@@ -544,20 +982,19 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
 
 
 
-        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+        <!-- <div class="resume-item d-flex flex-column flex-md-row mb-5">
           <div class="resume-content mr-auto">
             <h3 class="mb-0">IIC Online Sessions: Promote Innovation, IPR, Entrepreneurship, and Start-ups</h3>
             <div class="subheading mb-3">Participant</div>
-
-          </div>
+          </div> 
           <div class="resume-date text-md-right">
             <span class="text-primary change-fontsize">Apr 2020-May 2020
               <div>MHRD’s,Innovation Cell</div>
             </span>
           </div>
-        </div>
+        </div> -->
 
-        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+        <!-- <div class="resume-item d-flex flex-column flex-md-row mb-5">
           <div class="resume-content mr-auto">
             <h3 class="mb-0">Innovation and Entrepreneurship in a Post-Covid World</h3>
             <div class="subheading mb-3">Excellent Performance</div>
@@ -568,7 +1005,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
               <div>RMSOEE,IIT Kharagpur</div>
             </span>
           </div>
-        </div>
+        </div> -->
 
 
 
@@ -584,11 +1021,17 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
 
         <div class="resume-item d-flex flex-column flex-md-row mb-5">
           <div class="resume-content mr-auto">
-            <p>So, I'm mostly into theoretical physics, but here's a secret: I have a soft spot for dabbling in experimental physics too. Oh, and I'm a huge fan of Mr. Musk—his ideas are just mind-blowing!
+            <p>So, I'm mostly into theoretical physics, but here's a secret: I have a soft spot for dabbling in
+              experimental physics too. Oh, and I'm a huge fan of Mr. Musk,his ideas are just mind-blowing!
 
-When I'm not deep in physics, you'll often catch me vibing to Hindi and Punjabi tunes or dominating the badminton court with some killer smashes. There's something about that perfect smash sound that's just unbeatable. I'm also into table tennis; who knows, maybe one day we'll even give China a run for their money in both quantum computing and table tennis!
+              When I'm not deep in physics, you'll often catch me vibing to Hindi and Punjabi tunes or dominating the
+              badminton court with some killer smashes. There's something about that perfect smash sound that's just
+              unbeatable. I'm also into table tennis; who knows, maybe one day we'll even give China a run for their
+              money in both quantum computing and table tennis!
 
-I'm kind of an ambivert—I switch between being super outgoing and needing some solo time, depending on the vibe. Oh, and I love chatting about the stock market and I do invest myself, but don't ask me for portfolio tips just yet. I'm still not at that stage of the physicist's life :).</p>
+              I'm kind of an ambivert—I switch between being super outgoing and needing some solo time, depending on the
+              vibe. Oh, and I love chatting about the stock market and I do invest myself, but don't ask me for
+              portfolio tips just yet. I'm still not at that stage of the physicist's life :).</p>
 
           </div>
 
@@ -605,11 +1048,16 @@ I'm kind of an ambivert—I switch between being super outgoing and needing some
 
         <div class="resume-item d-flex flex-column flex-md-row mb-5">
           <div class="resume-content mr-auto">
-            <p><span>1. </span><a href="learn-quantum.html" class="important-link">How to learn Quantum Computing and beyond ?</a></p>
-            <p><span>2. </span><a href="https://oqp.iqoqi.oeaw.ac.at/open-quantum-problems" class="important-link">Open Quantum Problems, IQOQI Vienna.</a></p>
-            <p><span>3. </span><a href="https://in.linkedin.com/company/qsod-quantum-society-of-defence-institute-of-advanced-technology-pune" class="important-link">The Quantum Computing Society of DIAT (QSoD), An informal student run Quantum club at SQT, DIAT Pune.</a></p>
-            <p><span>4. </span><a href="https://www.quantiki.org/" class="important-link">Quantiki:For latest updates on positions and Conferences related to Quantum.</a></p>
-           
+            <p><span>1. </span><a href="learn-quantum.html" class="important-link">How to learn Quantum Computing and
+                beyond ?</a></p>
+            <p><span>2. </span><a href="https://oqp.iqoqi.oeaw.ac.at/open-quantum-problems" class="important-link">Open
+                Quantum Problems, IQOQI Vienna.</a></p>
+            <p><span>3. </span><a
+                href="https://in.linkedin.com/company/qsod-quantum-society-of-defence-institute-of-advanced-technology-pune"
+                class="important-link">QSoD – Student-run Quantum Club at DIAT Pune</a></p>
+            <p><span>4. </span><a href="https://www.quantiki.org/" class="important-link">Quantiki – Jobs & Conferences
+                in Quantum</a></p>
+
           </div>
 
         </div>
@@ -619,63 +1067,6 @@ I'm kind of an ambivert—I switch between being super outgoing and needing some
 
     </section>
 
-
-
-
-
-    <!-- <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
-      <div class="my-auto">
-        <h2 class="mb-5">Interests</h2>
-        <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skiier
-          and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and
-          kayaking.</p>
-        <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows,
-          I am an aspiring chef, and I spend a large amount of my free time exploring the latest technolgy advancements
-          in the front-end web development world.</p>
-      </div>
-    </section> -->
-
-    <!-- <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
-      <div class="my-auto">
-        <h2 class="mb-5">Awards &amp; Certifications</h2>
-        <ul class="fa-ul mb-0">
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            Google Analytics Certified Developer
-          </li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            Mobile Web Specialist - Google Certification
-          </li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            1<sup>st</sup>
-            Place - University of Colorado Boulder - Emerging Tech Competition 2009
-          </li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            1<sup>st</sup>
-            Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)
-          </li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            2<sup>nd</sup>
-            Place - University of Colorado Boulder - Emerging Tech Competition 2008
-          </li>
-          <li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            1<sup>st</sup>
-            Place - James Buchanan High School - Hackathon 2006
-          </li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            3<sup>rd</sup>
-            Place - James Buchanan High School - Hackathon 2005
-          </li>
-        </ul>
-      </div>
-    </section> -->
 
   </div>
 
