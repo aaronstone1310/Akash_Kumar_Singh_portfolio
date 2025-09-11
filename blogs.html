@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Publications</title>
+    <title>blogs</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -30,51 +30,88 @@
         h1, h2, h3, h4, h5, h6 {
             font-family: 'Merriweather', 'Times New Roman', serif;
         }
-        /* Publications page specific styles */
-        .pub-year {
-            width: 100px;
-            min-width: 80px;
-            font-size: 1.6rem;
-            font-weight: 600;
-            color: #333;
+        /* Contact page specific */
+        .contact-wrapper {
+            max-width: 1160px;
+            width: 50vw;
+            min-width: 50vw;
+            margin: 0 auto;
         }
 
-        .pub-card {
-            border-radius: 8px;
-            border: 1px solid #e9ecef;
-            background-color: #ffffff;
-            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.06);
+        .contact-card {
+            border: 1px solid #e6e9ef;
+            border-radius: 14px;
+            overflow: hidden;
+            background: #fff;
+            box-shadow: 0 12px 30px rgba(9, 30, 66, 0.12);
         }
 
-        .pub-title a {
-            color: #0d6efd;
+        .contact-header {
+            background: linear-gradient(135deg, #e4e4e4 0%, #ebebeb 100%);
+            color: #fff;
+            padding: 28px 28px;
+        }
+
+        .contact-header h3 {
+            margin: 0;
+            font-weight: 700;
+            letter-spacing: 0.3px;
+        }
+
+        .contact-body {
+            padding: 24px;
+        }
+
+        .info-tile {
+            background: #ffffff;
+            border: 1px solid #e6e9ef;
+            border-radius: 10px;
+            padding: 16px;
+            margin-bottom: 14px;
+        }
+
+        .info-tile i {
+            color: #0b3d91;
+        }
+
+        .form-control,
+        .form-select {
+            border-radius: 10px;
+            border-color: #dfe3eb;
+        }
+
+        .form-control:focus,
+        .form-select:focus {
+            border-color: #0b3d91;
+            box-shadow: 0 0 0 0.2rem rgba(11, 61, 145, .15);
+        }
+
+        .btn-send {
+            border-radius: 10px;
+            padding: 10px 18px;
+        }
+
+        .social a {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: #eef2f6;
+            color: #0b3d91;
             text-decoration: none;
+            margin-right: 8px;
         }
 
-        .pub-title a:hover {
-            text-decoration: underline;
+        .social a:hover {
+            background: #e6ebf2;
         }
-
-        .pub-meta {
-            color: #6c757d;
-            font-size: 0.95rem;
-        }
-
-        .pub-btn {
-            min-width: 80px;
-        }
-
-        .pub-row {
-            align-items: stretch;
-        }
-
         @media (max-width: 576px) {
-            .pub-year {
-                width: auto;
-                margin-bottom: 0.5rem;
-            }
-            .pub-title a {
-                word-break: break-word;
+            /* Ensure image scales well on mobile */
+            .container-fluid img {
+                max-width: 100%;
+                height: auto;
             }
         }
         /* Underline the active nav link */
@@ -134,49 +171,12 @@
     </nav>
 
     <div class="container-fluid p-0">
+      
 
-        <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
-            <div class="my-auto">
-                <h1 class="mb-0">Publications</h1>
-                <div class="subheading mb-4">Selected works with links to full texts.</div>
-
-                <!-- 2025 -->
-                <div class="row pub-row mb-4">
-                    <div class="col-12 col-sm-2 pub-year d-flex align-items-center">2025</div>
-                    <div class="col-12 col-sm-10">
-                        <div class="card pub-card mb-3">
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between align-items-start">
-                                    <h5 class="card-title pub-title mb-2">
-                                        <a href="#">An Efficient Quantum Algorithm for Laplace Transform</a>
-                                    </h5>
-                                    <a class="btn btn-outline-secondary btn-sm pub-btn" href="https://drive.google.com/file/d/1qNAgS13rYZgJ9sJYGz65nxVznJDVsHkD/view" target="_blank">PDF</a>
-                                </div>
-                                <div class="pub-meta">
-                                   Akash Kumar Singh, Ashish Kumar Patra, Prof. G. Raghavan, Dr. K. Srinivasan. Defence Institute of Advanced Technology, QClairvoyance Quantum Labs, 2025. (In Prep.)
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card pub-card">
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between align-items-start">
-                                    <h5 class="card-title pub-title mb-2">
-                                        <a href="#">Creating Encoders of CSS Codes for Measurement-based Quantum Computing using ZX-Calculus</a>
-                                    </h5>
-                                    <a class="btn btn-outline-secondary btn-sm pub-btn" href="https://drive.google.com/file/d/157_8fpetiHPulwbihqJUVzWjY9YGAqkC/view" target="_blank">PDF</a>
-                                </div>
-                                <div class="pub-meta">
-                                    Akash Kumar Singh*, Atharva Manoj Khairnar*, Saptarshi Mandal, Dr. Ankur Raina. IISER Tirupati, DIAT Pune, ICTS-TIFR Bangalore, IIT Kharagpur, IISER Bhopal, 2025. (* Equal contribution) (In Prep.)
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                
-
-            </div>
-        </section>
+           <div class="d-flex align-items-center justify-content-center" style="min-height: 80vh;">
+               <img src="img/coming soon.png" alt="Coming soon" class="img-fluid d-block" style="max-width: 900px; width: 100%; height: auto;">
+           </div>
+       
 
     </div>
 
@@ -207,6 +207,8 @@
             });
         })();
     </script>
+
+
 
 </body>
 

@@ -13,11 +13,8 @@
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom fonts for this template -->
-    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
-        rel="stylesheet">
+    <!-- Custom fonts: Inter (body) and Merriweather (headings) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet">
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
     <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
@@ -40,6 +37,20 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
 
 
 
+<style>
+    /* Global font setup */
+    body {
+        font-family: 'Inter', Arial, sans-serif;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Merriweather', 'Times New Roman', serif;
+    }
+    /* Underline the active nav link */
+    #sideNav .nav-link.active {
+        text-decoration: underline;
+        text-underline-offset: 3px;
+    }
+</style>
 </head>
 
 <body id="page-top">
@@ -77,7 +88,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
                     <a class="nav-link js-scroll-trigger" href="gallery.html">Gallery</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#">Blogs</a>
+                    <a class="nav-link js-scroll-trigger" href="blogs.html">Blogs</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" id="download-cv" href="Akash_Kumar_Singh_Resume.pdf">Download
@@ -169,6 +180,24 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
 
     <!-- Custom scripts for this template -->
     <script src="js/resume.min.js"></script>
+    <script>
+        (function () {
+            var current = window.location.pathname.split('/').pop() || 'index.html';
+            var links = document.querySelectorAll('#sideNav .nav-link');
+            links.forEach(function (link) {
+                var href = link.getAttribute('href');
+                if (!href || !href.endsWith('.html')) return;
+                var hrefFile = href.split('/').pop();
+                if (hrefFile === current || (current === '' && hrefFile === 'index.html')) {
+                    links.forEach(function (l) { l.classList.remove('active'); });
+                    link.classList.add('active');
+                    link.setAttribute('aria-current', 'page');
+                    var li = link.closest('.nav-item');
+                    if (li) li.classList.add('active');
+                }
+            });
+        })();
+    </script>
 
 </body>
 
