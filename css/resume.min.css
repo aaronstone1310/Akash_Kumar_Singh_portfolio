@@ -4,7 +4,7 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
  */
 body {
-    font-family: 'Open Sans', serif;
+    font-family: 'Inter', Arial, sans-serif !important;
     padding-top: 54px;
     color: #868e96
 }
@@ -22,8 +22,8 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "math";
-    font-weight: 300;
+    font-family: 'Inter', Arial, sans-serif !important;
+    font-weight: 700;
     /* text-transform: uppercase; */
     color: #343a40
 }
@@ -41,7 +41,7 @@ h2 {
 .subheading {
     /* text-transform: uppercase; */
     font-weight: 500;
-    font-family: "math";
+    font-family: 'Inter', Arial, sans-serif !important;
     font-size: 0.85rem
 }
 
@@ -176,7 +176,7 @@ a:hover {
     padding: 5px;
     margin: 10px;
     font-size: 0.99rem;
-    font-family: "math";
+    font-family: 'Inter', Arial, sans-serif !important;
 }
 
 .change-fontsize {
@@ -189,13 +189,13 @@ a:hover {
 }
 
 .top-upper-para{
-    font-family: math ;
+    font-family: 'Inter', Arial, sans-serif !important;
 }
 
 
 .headind-bold{
     font-weight: 600;
-    font-family: "poppins";
+    font-family: 'Inter', Arial, sans-serif !important;
     /* text-transform: uppercase; */
 }
 
