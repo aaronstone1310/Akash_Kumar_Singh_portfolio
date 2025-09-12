@@ -215,3 +215,42 @@ a:hover {
 .lqc-ordered-list{
 
 }
+/* Global mobile layout fixes */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+@media (max-width:991.98px) {
+    body {
+        padding-left: 0 !important;
+    }
+    #sideNav {
+        width: 100%;
+        left: 0;
+        right: 0;
+    }
+    .container-fluid {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    section.resume-section {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+}
+
+/* Stabilize carousel height across slides (avoid layout jump) */
+#galleryCarousel .carousel-item {
+    height: 320px;
+}
+#galleryCarousel .carousel-item img {
+    height: 100% !important;
+    width: 100% !important;
+    object-fit: contain;
+}
+@media (max-width: 576px) {
+    #galleryCarousel .carousel-item {
+        height: 240px;
+    }
+}
