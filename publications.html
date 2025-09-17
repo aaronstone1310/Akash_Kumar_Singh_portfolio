@@ -82,6 +82,72 @@
             text-decoration: underline;
             text-underline-offset: 3px;
         }
+        /* Project-style cards (mirroring research.html) */
+        .project-card {
+            display: flex;
+            flex-direction: column;
+            background-color: #ffffff;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            overflow: hidden;
+            margin-bottom: 2rem;
+            border: 1px solid #e9ecef;
+        }
+
+        .card-image-container {
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+            background: #f8f9fa;
+        }
+
+        .card-image {
+            width: auto;
+            max-width: 80%;
+            height: auto;
+            object-fit: contain;
+        }
+
+        .card-image.card-image--large {
+            max-width: 90%;
+        }
+
+        .card-content {
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 0.5rem;
+        }
+
+        .card-subtitle {
+            font-size: 0.875rem;
+            font-weight: 400;
+            color: #4a5568;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 1rem;
+        }
+
+        .card-text {
+            font-size: 1rem;
+            color: #4a5568;
+            line-height: 1.625;
+            text-align: justify;
+        }
+
+        @media (min-width: 768px) {
+            .project-card { flex-direction: row; }
+            .card-image-container { width: 40%; }
+            .card-content { width: 60%; }
+        }
     </style>
 </head>
 
@@ -145,31 +211,31 @@
 
                 <!-- 2025 -->
                 <div class="row pub-row mb-4">
-                    <div class="col-12 col-sm-2 pub-year d-flex align-items-center">2025</div>
-                    <div class="col-12 col-sm-10">
-                        <div class="card pub-card mb-3">
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between align-items-start">
-                                    <h5 class="card-title pub-title mb-2">
-                                        <a href="#">An Efficient Quantum Algorithm for Laplace Transform</a>
-                                    </h5>
+                    <div class="col-12">
+                        <div class="project-card">
+                            <div class="card-image-container">
+                                <img src="img/gallery-img/QLT CIRCUIT PENNYLANE.png" alt="Quantum Laplace Transform related image" class="card-image card-image--large">
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">An Efficient Quantum Algorithm for Laplace Transform</h3>
+                                <span class="card-subtitle">QUANTUM ALGORITHMS, LAPLACE TRANSFORM</span>
+                                <p class="card-text">Akash Kumar Singh, Ashish Kumar Patra, Prof. G. Raghavan, Dr. K. Srinivasan. Defence Institute of Advanced Technology, QClairvoyance Quantum Labs, 2025. (In Preparation)</p>
+                                <div>
                                     <a class="btn btn-outline-secondary btn-sm pub-btn" href="https://drive.google.com/file/d/1qNAgS13rYZgJ9sJYGz65nxVznJDVsHkD/view" target="_blank">PDF</a>
-                                </div>
-                                <div class="pub-meta">
-                                   Akash Kumar Singh, Ashish Kumar Patra, Prof. G. Raghavan, Dr. K. Srinivasan. Defence Institute of Advanced Technology, QClairvoyance Quantum Labs, 2025. (In Preparation)
                                 </div>
                             </div>
                         </div>
-                        <div class="card pub-card">
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between align-items-start">
-                                    <h5 class="card-title pub-title mb-2">
-                                        <a href="#">Creating Encoders of CSS Codes for Measurement-based Quantum Computing using ZX-Calculus</a>
-                                    </h5>
+
+                        <div class="project-card">
+                            <div class="card-image-container">
+                                <img src="img/gallery-img/tikzit_shor code part3 corrected (1).png" alt="CSS Codes MBQC related image" class="card-image">
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">Creating Encoders of CSS Codes for Measurement-based Quantum Computing using ZX-Calculus</h3>
+                                <span class="card-subtitle">QEC, MBQC, ZX-CALCULUS</span>
+                                <p class="card-text">Akash Kumar Singh*, Atharva Manoj Khairnar*, Saptarshi Mandal, Dr. Ankur Raina. IISER Tirupati, DIAT Pune, ICTS-TIFR Bangalore, IIT Kharagpur, IISER Bhopal, 2025. (* Equal contribution) (In Preparation)</p>
+                                <div>
                                     <a class="btn btn-outline-secondary btn-sm pub-btn" href="https://drive.google.com/file/d/157_8fpetiHPulwbihqJUVzWjY9YGAqkC/view" target="_blank">PDF</a>
-                                </div>
-                                <div class="pub-meta">
-                                    Akash Kumar Singh*, Atharva Manoj Khairnar*, Saptarshi Mandal, Dr. Ankur Raina. IISER Tirupati, DIAT Pune, ICTS-TIFR Bangalore, IIT Kharagpur, IISER Bhopal, 2025. (* Equal contribution) (In Preparation)
                                 </div>
                             </div>
                         </div>
