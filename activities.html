@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>blogs</title>
+    <title>Learn Quantum Computing</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -21,6 +21,21 @@
 
     <!-- Custom styles for this template -->
     <link href="css/resume.min.css" rel="stylesheet">
+    <!-- linkig font awesome -->
+    <!-- <link rel="stylesheet" type="text/css"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> -->
+    <!-- linking font awesome end here -->
+
+
+    <!-- Linking the google font poppins start here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Linking the google font poppins end here -->
+
+
 
     <style>
         /* Global font setup */
@@ -30,89 +45,70 @@
         h1, h2, h3, h4, h5, h6 {
             font-family: 'Merriweather', 'Times New Roman', serif;
         }
-        /* Contact page specific */
-        .contact-wrapper {
-            max-width: 1160px;
-            width: 50vw;
-            min-width: 50vw;
-            margin: 0 auto;
+        /* Scoped beautification for Learn Quantum page */
+        .learn-quantum-page .top-upper-para {
+            line-height: 1.8;
+            color: #39424e;
         }
 
-        .contact-card {
-            border: 1px solid #e6e9ef;
-            border-radius: 14px;
-            overflow: hidden;
-            background: #fff;
-            box-shadow: 0 12px 30px rgba(9, 30, 66, 0.12);
-        }
-
-        .contact-header {
-            background: linear-gradient(135deg, #e4e4e4 0%, #ebebeb 100%);
-            color: #fff;
-            padding: 28px 28px;
-        }
-
-        .contact-header h3 {
-            margin: 0;
-            font-weight: 700;
+        .learn-quantum-page h1 {
             letter-spacing: 0.3px;
         }
 
-        .contact-body {
-            padding: 24px;
+        .learn-quantum-page h2.headind-bold {
+            color: #2b2f33;
+            border-left: 4px solid #0b3d91;
+            padding-left: 10px;
         }
 
-        .info-tile {
+        .learn-quantum-page .resume-item {
             background: #ffffff;
-            border: 1px solid #e6e9ef;
+            border: 1px solid #eef0f3;
             border-radius: 10px;
             padding: 16px;
-            margin-bottom: 14px;
+            box-shadow: 0 6px 16px rgba(9, 30, 66, 0.05);
         }
 
-        .info-tile i {
-            color: #0b3d91;
-        }
-
-        .form-control,
-        .form-select {
-            border-radius: 10px;
-            border-color: #dfe3eb;
-        }
-
-        .form-control:focus,
-        .form-select:focus {
-            border-color: #0b3d91;
-            box-shadow: 0 0 0 0.2rem rgba(11, 61, 145, .15);
-        }
-
-        .btn-send {
-            border-radius: 10px;
-            padding: 10px 18px;
-        }
-
-        .social a {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            background: #eef2f6;
-            color: #0b3d91;
+        .learn-quantum-page .lqc-link-style {
+            color: #0d6efd;
             text-decoration: none;
-            margin-right: 8px;
         }
 
-        .social a:hover {
-            background: #e6ebf2;
+        .learn-quantum-page .lqc-link-style:hover {
+            text-decoration: underline;
+        }
+
+        .learn-quantum-page .lqc-ordered-list {
+            margin-left: 1.1rem;
+            line-height: 1.65;
+        }
+
+        .learn-quantum-page .lqc-ordered-list > li {
+            margin-bottom: 0.4rem;
+        }
+
+        .learn-quantum-page .lqc-para-style {
+            font-weight: 600;
+            color: #0b3d91;
+            background: #eef5ff;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+
+        .learn-quantum-page h3.mb-0 {
+            font-size: 1.1rem;
+            color: #2b2f33;
+        }
+
+        .learn-quantum-page .subheading {
+            color: #5b6572;
         }
         @media (max-width: 576px) {
-            /* Ensure image scales well on mobile */
-            .container-fluid img {
-                max-width: 100%;
-                height: auto;
+            .learn-quantum-page .lqc-ordered-list {
+                margin-left: 0.9rem;
             }
+            .learn-quantum-page h1 { font-size: 1.75rem; }
+            .learn-quantum-page h2.headind-bold { font-size: 1.3rem; }
         }
         /* Underline the active nav link */
         #sideNav .nav-link.active {
@@ -122,10 +118,11 @@
     </style>
 </head>
 
-<body id="page-top">
+<body id="page-top" class="learn-quantum-page">
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <!-- <span class="d-block d-lg-none">Start Bootstrap</span> -->
             <span class="d-none d-lg-block">
                 <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpeg" alt="">
             </span>
@@ -136,50 +133,49 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="publications.html">Publications</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="learn-quantum.html">Learn Quantum Computing</a>
-                </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="publications.html">Publications</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="learn-quantum.html">Learn Quantum Computing</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="research.html">Research</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="awards.html">Awards</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="gallery.html">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="blogs.html">Blogs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" id="download-cv" href="Akash_Kumar_Singh_Resume.pdf">Download CV</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="contact.html">Contact</a>
+        </li>
 
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="research.html">Research</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="awards.html">Awards</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="gallery.html">Gallery</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="activities.html">Activities</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="blogs.html">Blogs</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" id="download-cv" href="Akash_Kumar_Singh_Resume.pdf">Download
-                        CV</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="contact.html">Contact</a>
-                </li>
-
-            </ul>
+      </ul>
         </div>
     </nav>
 
     <div class="container-fluid p-0">
-      
 
-           <div class="d-flex align-items-center justify-content-center" style="min-height: 80vh;">
-               <img src="img/coming soon.png" alt="Coming soon" class="img-fluid d-block" style="max-width: 900px; width: 100%; height: auto;">
-           </div>
-       
+   
+
+        
+
+
+
+
+
 
     </div>
 
@@ -210,8 +206,6 @@
             });
         })();
     </script>
-
-
 
 </body>
 
