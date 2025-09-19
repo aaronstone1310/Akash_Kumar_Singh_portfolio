@@ -162,6 +162,49 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
             text-decoration: underline;
             text-underline-offset: 3px;
         }
+
+        /* Research video section styles */
+        .video-card {
+            background: #ffffff;
+            border: 1px solid #e9ecef;
+            border-radius: 12px;
+            box-shadow: 0 8px 22px rgba(9, 30, 66, 0.06);
+            overflow: hidden;
+        }
+        .video-header {
+            padding: 1.25rem 1.25rem 0.75rem 1.25rem;
+        }
+        .video-title {
+            margin: 0;
+            font-size: 1.35rem;
+            font-weight: 600;
+            color: #2d3748;
+        }
+        .video-subtitle {
+            margin: 0.25rem 0 0 0;
+            font-size: 0.95rem;
+            color: #6c757d;
+        }
+        .video-body {
+            padding: 0 1.25rem 1.25rem 1.25rem;
+        }
+        .video-responsive {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 */
+            height: 0;
+            border-radius: 10px;
+            overflow: hidden;
+            background: #000;
+        }
+        .video-responsive iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
     </style>
 
 
@@ -412,6 +455,23 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
 
             </div>
 
+        </section>
+
+        <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="research-video">
+            <div class="my-auto">
+                <h2 class="mb-4 headind-bold">Featured Video</h2>
+                <div class="video-card">
+                    <div class="video-header">
+                        <h3 class="video-title">Quantum Algorithms Talk</h3>
+                        <p class="video-subtitle">A concise overview related to ongoing research interests.</p>
+                    </div>
+                    <div class="video-body">
+                        <div class="video-responsive">
+                            <iframe src="https://www.youtube.com/embed/zRCWjzD4wAg?rel=0&modestbranding=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
 
