@@ -14,7 +14,9 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts: Inter (body) and Merriweather (headings) -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700;900&display=swap"
+        rel="stylesheet">
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
     <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
@@ -40,9 +42,16 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         body {
             font-family: 'Inter', Arial, sans-serif;
         }
-        h1, h2, h3, h4, h5, h6 {
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
             font-family: 'Merriweather', 'Times New Roman', serif;
         }
+
         .container {
             max-width: 960px;
             margin: 0 auto;
@@ -150,6 +159,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
             box-shadow: 0 8px 22px rgba(9, 30, 66, 0.06);
             padding: 12px;
         }
+
         @media (max-width: 576px) {
             #galleryCarousel .carousel-item img {
                 width: 100% !important;
@@ -157,6 +167,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
                 max-height: 240px;
             }
         }
+
         /* Underline the active nav link */
         #sideNav .nav-link.active {
             text-decoration: underline;
@@ -171,32 +182,39 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
             box-shadow: 0 8px 22px rgba(9, 30, 66, 0.06);
             overflow: hidden;
         }
+
         .video-header {
             padding: 1.25rem 1.25rem 0.75rem 1.25rem;
         }
+
         .video-title {
             margin: 0;
             font-size: 1.35rem;
             font-weight: 600;
             color: #2d3748;
         }
+
         .video-subtitle {
             margin: 0.25rem 0 0 0;
             font-size: 0.95rem;
             color: #6c757d;
         }
+
         .video-body {
             padding: 0 1.25rem 1.25rem 1.25rem;
         }
+
         .video-responsive {
             position: relative;
             width: 100%;
-            padding-bottom: 56.25%; /* 16:9 */
+            padding-bottom: 56.25%;
+            /* 16:9 */
             height: 0;
             border-radius: 10px;
             overflow: hidden;
             background: #000;
         }
+
         .video-responsive iframe {
             position: absolute;
             top: 0;
@@ -272,7 +290,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
                 <h1 class="mb-0">Research
                     <!-- <span class="text-primary">Singh</span> -->
                 </h1>
-               
+
                 <div id="galleryCarousel" class="carousel slide mb-5" data-ride="carousel" data-interval="2000">
                     <ol class="carousel-indicators">
                         <li data-target="#galleryCarousel" data-slide-to="0" class="active"></li>
@@ -374,7 +392,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
                     My M.S. thesis focused on developing a general scheme to encode any CSS code within
                     Measurement-Based Quantum Computing (MBQC). Using ZX-Calculus, I designed a universal approach that
                     can implement any CSS code on MBQC very efficiently and in a step-by-step way. This
-                    framework contributes to building better implementations of QEC codes on MBQC, which can be useful for Photonic 
+                    framework contributes to building better implementations of QEC codes on MBQC, which can be useful
+                    for Photonic
                     and other emerging implementations that use cluster states as a computational resource.
                 </p>
                 <!-- Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed perspiciatis voluptates iure eum debitis
@@ -419,8 +438,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
                 <!-- Card 1: Multiphase microfluidics -->
                 <div class="project-card">
                     <div class="card-image-container">
-                        <img src="img/gallery-img/WhatsApp 01.jpeg"
-                            alt="Quantum Laplace Transform related image" class="card-image">
+                        <img src="img/gallery-img/WhatsApp 01.jpeg" alt="Quantum Laplace Transform related image"
+                            class="card-image">
                     </div>
                     <div class="card-content">
                         <h3 class="card-title">Quantum Laplace Transform for Differential Equations</h3>
@@ -437,19 +456,22 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
                 <!-- Card 2: Sustainable material coatings -->
                 <div class="project-card">
                     <div class="card-image-container">
-                        <img src="img/gallery-img/WhatsApp Image.jpeg"
-                            alt="Quantum Error Correction related image" class="card-image">
+                        <img src="img/gallery-img/WhatsApp Image.jpeg" alt="Quantum Error Correction related image"
+                            class="card-image">
                     </div>
                     <div class="card-content">
                         <h3 class="card-title">Quantum Error Correction with CSS Codes on MBQC</h3>
                         <span class="card-subtitle">QEC, MBQC, ZX-Calculus</span>
-                        <p class="card-text">My M.S. thesis focused on Quantum Error Correction and Measurement-Based Quantum Computing (MBQC). 
-                            During this project, I developed a general scheme to encode any CSS code on MBQC. I have used ZX-Calculus to develop this 
-                            scheme and shown it to be explicitly working for three codes, namely, the three-bit repetition code, the Steane code, and 
-                            the Shor code. I have also verified this approach using stabilizer 
-                            evolution under measurements given by Gottesman. This project was supervised 
+                        <p class="card-text">My M.S. thesis focused on Quantum Error Correction and Measurement-Based
+                            Quantum Computing (MBQC).
+                            During this project, I developed a general scheme to encode any CSS code on MBQC. I have
+                            used ZX-Calculus to develop this
+                            scheme and shown it to be explicitly working for three codes, namely, the three-bit
+                            repetition code, the Steane code, and
+                            the Shor code. I have also verified this approach using stabilizer
+                            evolution under measurements given by Gottesman. This project was supervised
                             by Dr. Ankur Raina, Electrical Engineering and Computer Science, IISER Bhopal.
-                       </p>
+                        </p>
                     </div>
                 </div>
 
@@ -457,7 +479,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
 
         </section>
 
-        <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="research-video">
+        <!-- <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="research-video">
             <div class="my-auto">
                 <h2 class="mb-4 headind-bold">Featured Video</h2>
                 <div class="video-card">
@@ -472,7 +494,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
 
 
