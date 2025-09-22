@@ -117,6 +117,22 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
       text-decoration: underline;
       text-underline-offset: 3px;
     }
+    /* Awards section cards (top three) */
+    .award-card {
+        border: 1px solid #e9ecef;
+        border-radius: 14px;
+        background: #ffffff;
+        box-shadow: 0 10px 24px rgba(9, 30, 66, 0.08);
+        overflow: hidden;
+        transition: box-shadow 0.2s ease, transform 0.2s ease;
+    }
+    .award-card .card-body {
+        padding: 18px 20px;
+    }
+    .award-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 16px 32px rgba(9, 30, 66, 0.12);
+    }
   </style>
 </head>
 
@@ -189,7 +205,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
 
         <div class="row">
           <div class="col-md-6 mb-4">
-            <div class="card shadow-sm border-0 h-100" style="border-left: 4px solid #007bff; border-radius: 10px;">
+            <div class="card award-card h-100">
               <div class="card-body">
                 <h5 class="card-title mb-3">Secured highest marks in India in the Quantum Computing exam</h5>
                 <p class="card-text" style="color:#555;">Conducted by C-DAC for Scientist 'B' (2025).</p>
@@ -201,7 +217,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
             </div>
           </div>
           <div class="col-md-6 mb-4">
-            <div class="card shadow-sm border-0 h-100" style="border-left: 4px solid #28a745; border-radius: 10px;">
+            <div class="card award-card h-100">
               <div class="card-body">
                 <h5 class="card-title mb-3">Qualified GATE Physics</h5>
                 <p class="card-text" style="color:#555;">Qualified in 2023 & 2024. Awarded AICTE Scholarship for M.Tech
@@ -214,7 +230,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
             </div>
           </div>
           <div class="col-md-6 mb-4">
-            <div class="card shadow-sm border-0 h-100" style="border-left: 4px solid #007bff; border-radius: 10px;">
+            <div class="card award-card h-100">
               <div class="card-body">
                 <h5 class="card-title mb-3">Qualified IISER Aptitude Test</h5>
                 <p class="card-text" style="color:#555;">Qualified IAT 2018 and pursued BS-MS at IISER Tirupati.</p>
