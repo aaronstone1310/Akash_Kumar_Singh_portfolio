@@ -45,25 +45,51 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     h1, h2, h3, h4, h5, h6 {
         font-family: 'Merriweather', 'Times New Roman', serif;
     }
-    /* Compact, scoped styles for Certifications & Awards */
+    /* Certifications & Awards – list card style (matches provided design) */
     .certifications-section .resume-item {
-        padding: 10px;
-        margin-bottom: 0.75rem !important;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #ffffff;
+        border: 1px solid #e9ecef;
+        border-radius: 12px;
+        box-shadow: 0 6px 14px rgba(0, 0, 0, 0.06);
+        padding: 18px 22px;
+        margin-bottom: 16px !important;
     }
+
+    .certifications-section .resume-content { margin-right: 12px; }
 
     .certifications-section h3.mb-0 {
-        font-size: 1rem;
-        line-height: 1.3;
-        margin-bottom: 0.15rem;
+        font-size: 1.05rem;
+        line-height: 1.35;
+        font-weight: 600;
+        color: #202426;
+        margin: 0;
     }
 
-    .certifications-section .subheading {
-        font-size: 0.9rem;
-        margin-bottom: 0.15rem;
+    .certifications-section .subheading { display: none; }
+
+    .certifications-section .resume-date {
+        min-width: 180px;
+        text-align: right;
     }
 
     .certifications-section .resume-date .change-fontsize {
-        font-size: 0.88rem;
+        font-size: 0.95rem;
+        font-style: italic;
+        color: #0d6efd !important;
+        white-space: nowrap;
+    }
+
+    @media (max-width: 576px) {
+        .certifications-section .resume-item {
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 14px 16px;
+        }
+        .certifications-section .resume-date { text-align: left; margin-top: 6px; }
+        .certifications-section .resume-date .change-fontsize { font-size: 0.9rem; }
     }
     /* Underline the active nav link */
     #sideNav .nav-link.active {
